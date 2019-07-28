@@ -1,0 +1,248 @@
+@media only screen and (max-width: 1600px) {
+    .nav-link {
+        font-size: 18px !important;
+    }
+
+    .navbar .navbar-brand {
+        padding: 18px !important;
+    }
+
+    .navbar h1 {
+        font-size: 18px !important;
+    }
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .nav-link {
+        font-size: 15px !important;
+    }
+
+    .navbar .navbar-brand {
+        padding: 15px !important;
+    }
+
+    .navbar h1 {
+        font-size: 15px !important;
+    }
+}
+
+
+@media only screen and (max-width: 1140px) {
+    .nav-link {
+        font-size: 12px !important;
+    }
+
+    .navbar .navbar-brand {
+        padding: 12px !important;
+    }
+
+    .navbar h1 {
+        font-size: 12px !important;
+    }
+
+    .hamburger:focus {
+        outline: none;
+    }
+
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        background-color: white;
+        &::before{
+            background-color: white;
+        }
+        &::after{
+            background-color: white;
+        }
+    }
+
+    .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+        background-color: white;
+    }
+
+    .hamburger:hover {
+        opacity: 1 !important;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-footer .footer-details .footer-form{
+        width: 485px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-footer .footer-details .footer-form{
+        width: auto !important;
+        top: auto !important;
+    }
+    .partners-detail .partners-content-1 .content-1-body{
+        padding: 0px !important;
+    }
+    .partners-detail .partners-content-2 .content-2-body{
+        padding: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    img {
+        width: 100% !important;
+    }
+
+    .form-mail img {
+        width: auto !important;
+    }
+    .navbar-brand {
+        padding: 15px !important;
+    }
+    
+    .nav-item{
+        padding: 10px 23px !important;
+    }
+
+    .main-content-head .header-text{
+        padding: 0px;    
+    }
+
+    .main-content-head .header-text h1 {
+        font-size: 100px;
+    }
+    .main-content-head .header-text h2{
+        font-size: 51px;
+    }
+
+    .main-content-head .header-text h3 {
+        font-size: 24px;
+    }
+
+    .main-content-head .header-text h4{
+        font-size: 18px;
+    }
+
+    .form-details {
+        display: block !important;
+    }
+
+    .main-content-head .header-form .form-details {
+        padding: 0.5rem 1.5rem !important;
+    }
+    
+    .main-content-head .header-form .form-details input {
+        margin: 10px 0px !important;
+    }
+
+    .main-content-head .header-form .form-details .btn-submit {
+        margin-left: 0px !important;
+    }
+    
+    .benefit-1 {
+        display: block !important;
+    }
+
+    .benefits {
+        padding: 20px 0px !important;
+    }
+
+    .index-benefits .benefits .benefits-header h1 {
+        font-size: 55px;
+    }
+
+    .index-benefits .benefits .benefit-1 div {
+        margin: 0px !important;
+        margin-top: 20px !important;
+    }
+    
+    .our-spreads .spreads .spreads-circles {
+        display: block !important;
+    }
+
+    .spreads{
+        padding: 40px 0px !important;
+    }
+    
+    .our-spreads .spreads .spreads-circles .circle-1 {
+        margin: 0 auto !important;
+    }
+
+    .about-stox {
+        padding: 20px !important;
+        h1 {
+            font-size: 55px !important;
+        }
+    }
+
+    
+
+    .about-stox-content {
+        .about-content-1 {
+            display: block !important;
+            p{
+                margin-left: 0px !important;
+            }
+           
+        }
+    }
+
+    .footer-form {
+        width: 100% !important;
+        position:  relative !important;
+        top: auto !important;
+    }
+
+    .main-footer .footer-details .footer-form form{
+        padding: 30px 20px !important;
+    }
+
+    .pay-img {
+        width: 100% !important;
+    }
+
+    .navigation {
+        ul {
+            padding: 0px !important;
+            display: block !important;
+            li {
+                margin: 0px !important;
+                &::after{
+                    content: "";
+                    width: 0px !important;
+                    height: 0px !important;
+
+                }
+            }
+        }
+    }
+
+    .partners-detail .partners-content-2 .content-2-body{
+        padding: 0px !important;
+    }
+
+    .partners-detail .partners-content-1 .content-1-body{
+        padding: 0px !important;
+    }
+
+    .partners-detail{
+        padding: 10px !important;
+        margin-top: -210% !important;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .partners-detail .partners-head h1{
+        font-size: 55px !important;
+    }
+    .main-content-head .header-text h2{
+        font-size: 44px;
+    }
+
+    .main-content-head .header-text h3{
+        font-size: 21px;
+    }
+
+    .main-content-head .header-text h4 {
+        font-size: 16px;
+    }
+
+
+}
