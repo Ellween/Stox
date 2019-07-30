@@ -16,3 +16,20 @@ Route::get('/', function () {
 });
 
 Route::get('/partnertship','PagesController@partners');
+
+Auth::routes();
+
+// Admin
+Route::prefix('admin')->group(function(){
+    Route::get('/','AdminController@login')->name('admin-login');
+    Route::post('/login-admin','AdminController@login_admin')->name('login-admin');
+
+        Route::group(['middleware' => 'CheckAdmin'], function () {
+            Route::get('/home', 'AdminController@home')->name('admin_home_page');
+            Route::get('/logout','AdminController@logout');
+        });
+});
+
+
+
+Route::get('/home', 'HomeController@index')->name('home');
