@@ -139,7 +139,10 @@ body {
 .user-tables {
     overflow-y: scroll;
     height: calc(100vh - 31vh);
+}
 
+.user-tables::-webkit-scrollbar { 
+    display: none; 
 }
 
 .user-search span {
@@ -294,4 +297,57 @@ th, td {
 
 #search_id:focus {
     outline: none;
+}
+
+
+
+/* Pages */
+
+.glossary {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px 100px;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+}
+
+.edit_delete {
+    font-size: 24px;
+}
+
+.edit_delete i {
+    margin: 0 15px; 
+    cursor: pointer;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+}
+
+.edit_delete a {
+    color: #00000091;
+}
+
+.edit_delete_item i {
+    font-size: 17px;
+    margin: 0 15px;
+}
+
+.edit_delete_item a {
+    color: #00000091;
+}
+
+.glossary_items .glossary_title
+{
+    margin-right: 20px;
+}
+
+.glossary_items .glossary_text
+{
+    margin-left: 20px;
+}
+
+.actions  {
+    display: flex;
+    justify-content: center;
+}
+
+.actions i {
+    margin: 0 15px;
 }

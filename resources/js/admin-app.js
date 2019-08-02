@@ -5,10 +5,11 @@
  */
 
 require('./bootstrap');
+import Swal from 'sweetalert2'
+window.Swal = Swal;
 
 
 import intlTelInput from 'intl-tel-input';
 window.intlTelInput = intlTelInput; 
 
-
-require('./script');
+require('../../public/js/admin');

@@ -31,3 +31,50 @@ $(document).ready(function() {
 
 	});
 });
+
+// AJAX
+
+$(document).ready(function(){
+
+	$('.submit-glossary').click(function(e){
+		var title = $('#glossary_title').val();
+		var text = $('#glossary_text').val();
+	
+		e.preventDefault();
+
+		$.ajax ({
+				headers: {
+					'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+				},
+
+				url: "/admin/add_glossary",
+				type : 'POST',
+				data: {title:title , text:text},
+
+				success: function(data)
+				{
+
+					console.log(data);
+					var html ="";
+					html += data ;
+					$('.amas').prepend(html);
+
+					Swal.fire({
+						position: 'top-end',
+						type: 'success',
+						title: 'Your work has been saved',
+						showConfirmButton: false,
+						timer: 1500,
+					})
+
+					$('.swal2-popup').css('font-size','0.5rem');
+					  
+				},
+
+				error: function()
+				{
+					console.log('nope');
+				}
+			});
+	});
+});
