@@ -26,6 +26,7 @@ Route::prefix('admin')->group(function(){
 
         Route::group(['middleware' => 'CheckAdmin'], function () {
             Route::get('/home', 'AdminController@home')->name('admin_home_page');
+            Route::get('/pages','AdminController@pages')->name('admin_pages');
             Route::get('/logout','AdminController@logout');
         });
 });

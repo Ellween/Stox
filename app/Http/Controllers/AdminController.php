@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use Session;
+use App\User;
 
 class AdminController extends Controller
 {
@@ -32,7 +33,10 @@ class AdminController extends Controller
 
     public function home()
     {
-        return view('admin.admin');
+        // \Log::info('alexa aris yle');
+        $user = auth()->guard('admin')->user();
+        $users = User::all();
+        return view('admin.layout.admin-user',compact('users','user'));
     }
 
     public function logout()
@@ -40,6 +44,12 @@ class AdminController extends Controller
         Auth::guard('admin')->logout();
         Session::forget('admin_logged_in');
         return redirect()->route('admin-login');
+    }
+
+    public function pages()
+    {
+        $user = auth()->guard('admin')->user();
+        return view('admin.layout.pages',compact('user'));
     }
     
 }

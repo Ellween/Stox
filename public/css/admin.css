@@ -1,0 +1,297 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.pad {
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.pad-child {
+    padding: 15px 40px;
+}
+
+.full-nav {
+  
+}
+
+.post {
+    padding: 15px 0px;
+}
+
+.not-correct {
+    height: calc(100vh - 31vh);
+    overflow-y: scroll;
+}
+
+/* Navigation Header */
+
+.navigation {
+    color: #858F95;
+    background: #192329;
+    height: 100vh;
+}
+
+.navigation-header {
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navigation-header p {
+    font-size: 20px;
+    margin: 0;
+    padding-left: 23px;
+}
+
+
+.admin-pic {
+    background-image: url("https://i.imgur.com/M8OLu60.png");
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+/* Navigation Body */
+
+.navigation-body {
+}
+
+.blue {
+    background: #0000004f;
+}
+
+.navigation-body h2 {
+    font-size: 18px;
+    margin-top: 3rem;
+    background: #0000004f;
+}
+
+.navigation-body p {
+    font-size: 15px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.navigation-body p:hover {
+    background: #2C3B3F;
+    color: white;
+}
+
+.posts-click:hover {
+    background: #2C3B3F;
+    color: white;
+}
+
+/* posts child */
+
+.posts-child {
+    display: none;
+}
+
+.fa-chevron-down {
+    transform: rotate(-90deg);
+    font-size: 13px;
+    transition: all .4s;
+}
+
+.fa-chevron-down.active {
+    transform: rotate(0deg);
+}
+
+
+/* Main Side */
+
+.main-side {
+    background: #EDF0F6;
+    height: 100vh;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.main-header p {
+    margin: 0;
+    padding: 0 30px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.main-header span {
+    padding: 0 5px;
+}
+
+.main-header h1 {
+    color: #45474D;
+}
+
+.user-search p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.user-tables {
+    overflow-y: scroll;
+    height: calc(100vh - 31vh);
+
+}
+
+.user-search span {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.user-search label {
+    padding: 0px 10px;
+    margin: 0;
+}
+
+.main-body {
+    background: white;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.2);
+}
+
+.user-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.body-header button {
+    background: #625CA9;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+
+th, td {
+      padding: 10px;
+      border: 1px solid #f5f5f5;
+  }
+
+
+
+/* Menu CSS */
+
+.header_menu ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.header_menu li {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.header_menu li:hover {
+    background: #2C3B3F;
+    color: white;;
+}
+
+.comment {
+	width: 100%;
+	
+}
+.btn-primary {
+    font-size: .7rem !important;
+}
+
+.draft {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+}
+
+.pub {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+}
+
+
+.pub {
+    background: green;
+    border: 3px solid green;
+
+-webkit-animation: pulsate 1s ease-out;
+-webkit-animation-iteration-count: infinite; 
+}
+
+
+.draft {
+    background: red;
+    border: 3px solid red;
+
+-webkit-animation: pulsate 1s ease-out;
+-webkit-animation-iteration-count: infinite; 
+}
+/* 
+@keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 1.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+} */
+
+
+.search_btn {
+    display: none;
+}
+
+.breadcrumb {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+}
+
+.navigation-list a {
+    color: #858F95;
+    text-decoration: none;
+}
+
+.navigation-list a:focus {
+    text-decoration: none !important;
+    border: none;   
+}
+
+.navigation-list a:hover {
+    text-decoration: none;
+}
+
+#search_id {
+    border: 1px solid #ccc !important;
+    border-radius: 3px !important;
+    padding: 3px !important;
+}
+
+#search_id:focus {
+    outline: none;
+}
