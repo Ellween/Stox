@@ -13,3 +13,4 @@ import intlTelInput from 'intl-tel-input';
 window.intlTelInput = intlTelInput; 
 
 require('../../public/js/admin');
+

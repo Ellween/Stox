@@ -41061,6 +41061,66 @@ $(document).ready(function () {
         console.log('nope');
       }
     });
+  }); // View GLossary
+
+  $('.view_glossary').click(function () {
+    var id = $(this).attr('id');
+    $.ajax({
+      headers: {
+        'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+      },
+      url: "/admin/show_glossary/" + id,
+      type: 'GET',
+      success: function success(data) {
+        $('.glossary_header').text(data.title);
+        $('.glossary_body').text(data.text);
+      },
+      error: function error() {
+        console.log('nope');
+      }
+    });
+  }); // Edit Glossary
+
+  $('.edit_glossary').click(function () {
+    var id = $(this).attr("id");
+    $(this).parent().parent().parent().attr('data-id', id);
+  });
+  $('.edit_submit-glossary').click(function () {
+    var title = $('#edit_glossary_title').val();
+    var text = $('#edit_glossary_text').val();
+    var id = $('.amas').attr('data-id');
+    console.log(id);
+    $.ajax({
+      headers: {
+        'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+      },
+      url: "/admin/update_glossary/" + id,
+      type: 'POST',
+      data: {
+        title: title,
+        text: text
+      },
+      success: function success(data) {
+        var text = data.text;
+        var sub = text.substr(0, 80);
+        $('.edit_glossary').parent().parent().parent().find("tr[table-id = " + id + "]").find('.glossary_title').text(data.title);
+        $('.edit_glossary').parent().parent().parent().find("tr[table-id = " + id + "]").find('.glossary_text').text(sub + "...");
+      },
+      error: function error() {
+        console.log('nope');
+      }
+    });
+  }); // Delte Glossary
+
+  $('#ViewModal').on('hidden.bs.modal', function (e) {
+    $('.card-header h5').text("");
+    $('.card-body p').text("");
+  });
+  $('#exampleModal').on('hidden.bs.modal', function (e) {
+    $('form input,textarea').val("");
+  });
+  $('#EditModal').on('hidden.bs.modal', function (e) {
+    $('form input,textarea').val("");
   });
 });
 
@@ -41160,7 +41220,7 @@ if (token) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/alex/Desktop/Laravel/Stox/resources/js/admin-app.js */"./resources/js/admin-app.js");
+module.exports = __webpack_require__(/*! C:\Users\GamersParadise\Downloads\Open Server 5.2.9\OSPanel\domains\Stox\resources\js\admin-app.js */"./resources/js/admin-app.js");
 
 
 /***/ })

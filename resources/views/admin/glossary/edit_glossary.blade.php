@@ -6,7 +6,6 @@
     {{-- Glossary Add Popup --}}
 
     <div class="add_glossary_popup">
-      <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -32,34 +31,60 @@
     </div>
 
 
+    {{--  View Modal  --}}
+
     <div class="modal fade" id="ViewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">View Glossary</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <form action="">
-                    <div class="modal-body">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5></h5>
-                            </div>
-                            <div class="card-body">
-                                <p></p>
-                            </div>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">View Glossary</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+            <form action="">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class='glossary_header'></h5>
+                        </div>
+                        <div class="card-body">
+                            <p class='glossary_body' ></p>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-danger submit-glossary" data-dismiss="modal" aria-label="Close">Save changes</button>
-                    </div>
-                </form>
-              </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+
+     {{--  Edit Modal  --}}
+
+     <div class="modal fade" id="EditModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Glossary</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-          </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="Enter title" name='title' id='edit_glossary_title' class='form-control'>
+                    <textarea name="body" cols="30" rows="5"  id='edit_glossary_text' placeholder="Enter Text" class='form-control mt-2'></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button"  class="btn btn-danger edit_submit-glossary" data-dismiss="modal" aria-label="Close">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -81,7 +106,7 @@
                         <th scope="col" class='text-center'>Actions</th>
                         </tr>
                     </thead>
-                    <tbody class='amas'>
+                    <tbody class='amas' data-id="">
                         @foreach ($glossary as $glossary)
                             @include('admin.glossary.glossary_items')
                         @endforeach

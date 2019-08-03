@@ -38272,8 +38272,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/alex/Desktop/Laravel/Stox/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/alex/Desktop/Laravel/Stox/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\GamersParadise\Downloads\Open Server 5.2.9\OSPanel\domains\Stox\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\GamersParadise\Downloads\Open Server 5.2.9\OSPanel\domains\Stox\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

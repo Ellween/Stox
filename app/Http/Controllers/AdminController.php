@@ -68,26 +68,28 @@ class AdminController extends Controller
 
     public function add_glossary(Request $request)
     {
-        // $this->validate($request, [
-            
-        // ]);
-        
-            $glossary = Glossary::create([
-                'title' => request('title'),
-                'text' => request('text')
-            ]);
-
-            $user = auth()->guard('admin')->user();
-
-            return view('admin.glossary.glossary_items', compact('glossary','user'))->render();
-        
+        $glossary = Glossary::create([
+            'title' => request('title'),
+            'text' => request('text')
+        ]);
+        $user = auth()->guard('admin')->user();
+        return view('admin.glossary.glossary_items', compact('glossary','user'))->render();
     }
 
     public function show_glossary(Request $request,$id)
     {
         $single_glossary = Glossary::find($id);
+        return $single_glossary;
+    }
 
-        return view('admin.glossary.glossary_items', compact('single_glossary'))->render();
-
+    public function update_glossary(Request $request,$id)
+    {
+        $update_glossary = Glossary::find($id);
+        
+        $update_glossary->title = $request->title;
+        $update_glossary->text = $request->text;
+        $update_glossary->save();
+        
+        return $update_glossary;
     }
 }

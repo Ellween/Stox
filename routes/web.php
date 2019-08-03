@@ -32,7 +32,7 @@ Route::prefix('admin')->group(function(){
                 Route::get('/add_page','AdminController@add_page')->name('add_page');
                 Route::get('/glossary','AdminController@glossary')->name('glossary_page');
                 Route::Post('/add_glossary','AdminController@add_glossary')->name('add_glossary');
-                Route::get('/update_glossary','AdminController@update_glossary')->name('update_glossary');
+                Route::post('/update_glossary/{id}','AdminController@update_glossary')->name('update_glossary');
                 Route::get('/show_glossary/{id}','AdminController@show_glossary')->name('show_glossary');
         });
 });
