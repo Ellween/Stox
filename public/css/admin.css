@@ -185,15 +185,27 @@ table {
 }
 
 tr:nth-child(even) {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
   }
+
+  .table-striped tbody tr:nth-of-type(odd)
+  {
+    background-color: #F3F7FC !important;
+}
+  
 
 th, td {
       padding: 10px;
-      border: 1px solid #f5f5f5;
   }
 
 
+  .actions a {
+    cursor: pointer;
+  }
+
+  .actions i {
+    cursor: pointer;
+  }
 
 /* Menu CSS */
 

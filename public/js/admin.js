@@ -93,6 +93,7 @@ $(document).ready(function(){
 			{
 				$('.glossary_header').text(data.title);
 				$('.glossary_body').text(data.text)
+				
 			},
 
 			error: function()
@@ -129,6 +130,15 @@ $(document).ready(function(){
 				var sub = text.substr(0,80);
 				$('.edit_glossary').parent().parent().parent().find("tr[table-id = " + id + "]").find('.glossary_title').text(data.title);	
 				$('.edit_glossary').parent().parent().parent().find("tr[table-id = " + id + "]").find('.glossary_text').text(sub + "...");	
+				Swal.fire({
+					position: 'top-end',
+					type: 'success',
+					title: 'Your work has been saved',
+					showConfirmButton: false,
+					timer: 1500,
+				})
+
+				$('.swal2-popup').css('font-size','0.5rem');
 			},
 
 			error: function()
@@ -155,5 +165,8 @@ $(document).ready(function(){
 	  });
 
 
+	  $('.fa-trash').click(function(){
+		$(this).next().trigger('click');
+	  });
 
 });

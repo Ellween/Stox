@@ -19,20 +19,26 @@ Route::get('/', function () {
 
 // Pages
 Route::get('/partnership','PagesController@partners');
-Route::get('/education','PagesController@education');
+// Route::get('/education','PagesController@education');
 Route::get('/glossary','PagesController@get_glossary');
 
 
 // Search
 Route::post('/search','GlossaryController@search');
 
+// Add Page
+Route::post('/add_page','PageController@store');
+
+// get page
+
+Route::get('/{slug}','PagesController@single')->name('single');
 
 // Login_registration
 Auth::routes();
 
 // Admin
 Route::prefix('admin')->group(function(){
-    Route::get('/','AdminController@login')->name('admin-login');
+    Route::get('/login','AdminController@login')->name('admin-login');
     Route::post('/login-admin','AdminController@login_admin')->name('login-admin');
 
         Route::group(['middleware' => 'CheckAdmin'], function () {
@@ -45,6 +51,14 @@ Route::prefix('admin')->group(function(){
                 Route::Post('/add_glossary','AdminController@add_glossary')->name('add_glossary');
                 Route::post('/update_glossary/{id}','AdminController@update_glossary')->name('update_glossary');
                 Route::get('/show_glossary/{id}','AdminController@show_glossary')->name('show_glossary');
+                // Single Page
+                Route::get('/pages/{slug}','AdminController@get_single')->name('get_single');
+                Route::post('/edit_page/{id}','AdminController@edit_page')->name('edit_page');
+
+                // Delet Page
+                Route::post('/delete/{id}','AdminController@delete_page')->name('delete_page');
+                // delete GLossary
+                Route::post('/delete_glossary/{id}','AdminController@delete_glossary')->name('delete_glossary');
         });
 });
 

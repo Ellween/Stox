@@ -117,18 +117,20 @@
                         <div class="about-stox-content">
                             <div class="about-content-1">
                                 <img src="/images/bear.svg" alt="">
-                                <img src="/images/bull.svg" alt="">
+                               <p>StoxTrades offers education on Forex trading, CFDs, cryptocurrencies, and  
+                                   commodities. We have been always advocating high standards of teaching by 
+                                   using the most advanced techniques to make trading education practical for all kinds of traders. 
+                                   Our educational platform is designed to manage all the signals, get customer support and much more.
+
+                                </p>
                             </div>
                             <div class="about-content-2">
-                                <p>
-                                    StoxTrades offers education on Forex trading, CFDs, cryptocurrencies, and commodities. We have been always advocating high standards of teaching by using the most advanced techniques to make trading education practical for all kinds of traders. Our educational platform is designed to manage all the signals, get customer support and much more.
-                                    <br>
-                                    We want our clients to be successful, so our goal is to equip them with trading knowledge, which they can use in live trading.  
-                                    <br>
-                                    While we are not a trading platform, we are proud to work only with regulated brokers, which provide the world's leading financial products, innovative technology, and trading security. 
-                                    <br>
-                                    Get advantage of great teaching experience and we will refer you to trusted and regulated brokers to get hands-on experience. 
-                                </p>
+                                <img src="/images/bull.svg" alt="">
+                                <p>We want our clients to be successful, so our goal is to equip them with trading knowledge, which they can use in live trading.  
+
+                                        While we are not a trading platform, we are proud to work only with regulated brokers, which provide the world's leading financial products, innovative technology, and trading security. 
+                                        
+                                        Get advantage of great teaching experience and we will refer you to trusted and regulated brokers to get hands-on experience. </p>
                             </div>
                         </div>
                     </div>

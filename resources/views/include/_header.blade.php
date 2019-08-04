@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg p-0">
     <div class ='d-flex align-items-center'>
-        <a class="navbar-brand m-0" href="#"><img src="/images/logo.svg" alt=""></a>
+        <a class="navbar-brand m-0" href="/"><img src="/images/logo.svg" alt=""></a>
         <h1>STOXTRADES</h1>
     </div>
     <button class="hamburger hamburger--spin navbar-toggler" type="button" aria-label="Menu" aria-controls="navigation" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -12,10 +12,15 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto d-flex justify-content-end w-100">
             <li class="nav-item">
-                <a class="nav-link" href="#">EDUCATION</a>
+                <a class="nav-link" href="/">Home</a>
             </li>
+            @foreach ($menu as $menu)
+                <li class="nav-item">
+                    <a class="nav-link" href="/{{ $menu->slug }}"> {{ $menu->title }}</a>
+                </li>
+            @endforeach
             <li class="nav-item">
-                <a class="nav-link" href="#">GLOSSARY</a>
+                <a class="nav-link" href="/glossary">GLOSSARY</a>
             </li>
             {{--  <li class="nav-item">
                 <div class="login d-flex align-items-center">

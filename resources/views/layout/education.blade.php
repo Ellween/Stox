@@ -12,9 +12,23 @@
         <div class="row">
             <div class="partners-detail">
                 <div class="partners-head">
-                    <h1>Partnership With Us</h1>
+                    <h1>{{ $page->title }}</h1>
                 </div>
+
                 <div class="partners-content-1">
+                    {{--  <div class="content-1-header">
+                        <h2>{{ $page->title }}</h2>
+                    </div>  --}}
+                    <div class="content-1-body">
+                        <div class='img_header'>
+                            {!! $page->content !!}
+                        </div>
+                    </div>
+                </div>
+
+
+
+                {{--  <div class="partners-content-1">
                     <div class="content-1-header">
                         <h2>Personal Education</h2>
                     </div>
@@ -32,8 +46,8 @@
                         </div>
                         
                     </div>
-                </div>
-                <div class="partners-content-2">
+                </div>  --}}
+                {{--  <div class="partners-content-2">
                     <div class="content-2-header">
                         <h2>Trading Strategy</h2>
                     </div>
@@ -48,7 +62,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div>  --}}
             </div>
         </div>
     </div>

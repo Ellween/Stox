@@ -19,6 +19,7 @@ body {
         color: #FFFFFF;
         padding: 0px 20px;
         margin: 0;
+        font-family: 'Inter var', sans-serif !important; 
     }
 
     .nav-item{
@@ -264,18 +265,26 @@ body {
         }
     }
     .about-stox-content {
-        display: flex;
         .about-content-1 {
+            margin-top: 30px;
             display: flex;
-            flex-direction: column;
             align-items: flex-start;
             img{
-                margin: 30px 0px;
+                
+            }
+
+            p{
+                font-size: 24px;
+                line-height: 29px;
+                color: #02033D;
+                margin-left: 104px;
             }
             
         }
         .about-content-2 {
             margin-top: 30px;
+            display: flex;
+            align-items: flex-start;
             p{
                 font-size: 24px;
                 line-height: 29px;
@@ -293,6 +302,7 @@ body {
 .main-footer{
     background: linear-gradient(165.94deg, #010289 6.53%, #1D30D5 100%);
     position: relative;
+    margin-top: 50px;
     &::after{
         content: "";
         background-image: url("/images/footer-bg.png");
@@ -403,6 +413,7 @@ body {
             li {
                 position: relative;
                 margin: 0 35px;
+                font-family: 'Inter var', sans-serif !important; 
                 @extend .copyright;
                 &::after{
                     content: "";
@@ -444,7 +455,7 @@ body {
         }
     }
     .partners-content-1{
-        margin-top: 90px;
+        margin-top: 50px;
         .content-1-header{
             h2{
                 font-weight: 600;
@@ -457,25 +468,35 @@ body {
             padding: 30px 0px;
             display: flex;
             align-items: flex-start;
-            img{
+            padding-right: 20px;
 
+            h2 {
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 58px;
+                color: #F24823;
+            }
+            img{
+                margin-right: 45px;
             }
             .img_header{
-                padding:0px 45px;
+                // padding:0px 45px;
                 h4{
                     font-weight: 500;
                     font-size: 36px;
                     line-height: 43px;
                     color: #02033D;
                 }
+                p{
+                    padding-left: 190px;
+                    margin-top: 20px;
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #02033D;
+                }
             }
-            p{
-                margin-top: 20px;
-                font-weight: 300;
-                font-size: 24px;
-                line-height: 29px;
-                color: #02033D;
-            }
+            
         }
     }
 
@@ -590,7 +611,16 @@ body {
 
 
 
+// Admin Tables
 
+.table thead th {
+    border-bottom: 0px !important;
+}
+
+.table th, .table td {
+    border-bottom: 0px !important;
+    border-top: 0px !important;
+}
 
 
 

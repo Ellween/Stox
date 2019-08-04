@@ -41105,6 +41105,14 @@ $(document).ready(function () {
         var sub = text.substr(0, 80);
         $('.edit_glossary').parent().parent().parent().find("tr[table-id = " + id + "]").find('.glossary_title').text(data.title);
         $('.edit_glossary').parent().parent().parent().find("tr[table-id = " + id + "]").find('.glossary_text').text(sub + "...");
+        Swal.fire({
+          position: 'top-end',
+          type: 'success',
+          title: 'Your work has been saved',
+          showConfirmButton: false,
+          timer: 1500
+        });
+        $('.swal2-popup').css('font-size', '0.5rem');
       },
       error: function error() {
         console.log('nope');
@@ -41121,6 +41129,9 @@ $(document).ready(function () {
   });
   $('#EditModal').on('hidden.bs.modal', function (e) {
     $('form input,textarea').val("");
+  });
+  $('.fa-trash').click(function () {
+    $(this).next().trigger('click');
   });
 });
 

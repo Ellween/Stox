@@ -12,7 +12,7 @@
             {{-- <a href='{{ route('admin_home_page') }}'><p class ='pad' >Users</p></a> --}}
             <a href='{{ route('admin_home_page') }}'><p class ='pad {{ (\Request::route()->getName() == 'admin_home_page') ? 'blue' : '' }}' >Users</p></a>
             <a href='{{ route('admin_pages') }}'><p class ='pad {{ (\Request::route()->getName() == 'admin_pages') ? 'blue' : '' }}' >Pages</p></a>
-            <div class ='pad posts-click d-flex align-items-center justify-content-between' >
+            {{--  <div class ='pad posts-click d-flex align-items-center justify-content-between' >
                 <p class =''>Posts</p>
                 <i class="fas fa-chevron-down"></i>
             </div>
@@ -23,7 +23,7 @@
             </div>
             <p class ='pad'>Categories</p>
             <p class ='pad'>Tag</p>
-            <a href='menu.html'><p class ='pad'>Menu</p></a>
+            <a href='menu.html'><p class ='pad'>Menu</p></a>  --}}
         </div>
     </div>
 </div>

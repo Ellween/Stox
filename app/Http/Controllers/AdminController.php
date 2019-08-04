@@ -7,6 +7,7 @@ use Auth;
 use Session;
 use App\User;
 use App\Glossary;
+use App\page;
 
 class AdminController extends Controller
 {
@@ -48,9 +49,10 @@ class AdminController extends Controller
     }
 
     public function pages()
-    {
+    {   
+        $pages = Page::all();
         $user = auth()->guard('admin')->user();
-        return view('admin.layout.pages',compact('user'));
+        return view('admin.layout.pages',compact('user','pages'));
     }
     
     public function add_page()
@@ -91,5 +93,41 @@ class AdminController extends Controller
         $update_glossary->save();
         
         return $update_glossary;
+    }
+
+    public function get_single(Request $request,$slug)
+    {
+        $single_page = Page::where('slug', $slug)->first();
+        $user = auth()->guard('admin')->user();
+        return view('admin.pages.get_page',compact('single_page','user'));
+    }
+
+    public function edit_page(Request $request,$id)
+    {
+        $update_page = Page::find($id);
+
+        $update_page->title = $request->title;
+        $update_page->slug = $request->slug;
+        $update_page->url = $request->url;
+        $update_page->content = $request->content;
+        $update_page->save();
+
+        return redirect()->back();
+    }
+
+    public function delete_page($id)
+    {
+        $page = Page::find($id);
+        $page->delete();
+
+        return redirect()->back();
+    }
+
+    public function delete_glossary($id)
+    {
+        $glossary = Glossary::find($id);
+        $glossary->delete();
+
+        return redirect()->back();
     }
 }
