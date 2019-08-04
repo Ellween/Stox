@@ -55,7 +55,55 @@ $(document).ready(function () {
     $('.hamburger').click(()=> {
         $('.hamburger').toggleClass("is-active");
     });
+
+
     
+    //   Glossary Search System
+
+    $('#search').on('keyup',function(){
+      console.log($(this).val());
+      var word = $(this).val();
+
+      $.ajax ({
+        headers: {
+          'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+        },
+  
+        url: "/search",
+        type : 'POST',
+        data: {word:word},
+  
+        success: function(data)
+        {
+
+          console.log(data);
+          var html="";
+
+          for(let i = 0; i< data.length; i++)
+          {
+            html +=  
+            `
+            <div class="single-item">
+              <h4>`+ data[i].title +`</h4>
+              <p>- ` + data[i].text + ` </p>
+            </div>
+
+            `;
+
+            $('.glossary_items').html(html);
+          }
+
+          console.log(html);
+        },
+  
+        error: function()
+        {
+          console.log('nope');
+        }
+      });
+
+    });
+      
   });
 
 

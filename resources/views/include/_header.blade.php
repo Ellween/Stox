@@ -12,23 +12,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto d-flex justify-content-end w-100">
             <li class="nav-item">
-                <a class="nav-link" href="#">Trading</a>
+                <a class="nav-link" href="#">EDUCATION</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">ANALYTICS & EDUCATION</a>
+                <a class="nav-link" href="#">GLOSSARY</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">PROMOTIONS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">PARTNERSHIP</a>
-            </li>
-            <li class="nav-item">
+            {{--  <li class="nav-item">
                 <div class="login d-flex align-items-center">
                     <i class="fas fa-sign-out-alt"></i>
                     <a class="nav-link" href="#">LOGIN / REGISTER</a>
                 </div>
-            </li>
+            </li>  --}}
         </ul>
     </div>
 </nav>

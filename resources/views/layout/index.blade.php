@@ -4,19 +4,18 @@
     <div class='main-content-head'>
         <div class="container">
             <div class="row">
-                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                     <div class="header-text">
-                        <h1>Trade</h1>
-                        <h2>in the moment</h2>
-                        <h3>Open Real Account Now & Get</h3>
+                        <h1>Discover</h1>
+                        <h2>Secrets of Succesfull Trading</h2>
+                        <h3>Activate Your Account Now and</h3>
                         <div class='d-flex align-items-center'>
-                            <h2>100%</h2>
+                            <h5>Get Free</h5>
                             <div class='d-flex flex-column ml-5'>
-                                <h3>Safe</h3>
-                                <h3>Investment Strategy</h3>
+                                <h3>Trading Signals & Education</h3>
                             </div>
                         </div>
-                        <h4>Start Trading with Demo or <span>Real</span> Account</h4>
+                        <h4>Learn How to Trade with Demo or <span>Real</span> Account</h4>
                     </div>
                 </div>
             </div>
@@ -57,20 +56,22 @@
                                 <div class="benefit-1">
                                     <img src="/images/benefit-1.svg" alt="">
                                     <div>
-                                        <h3>More than <span>20 years</span> of experience</h3>
-                                        <h3>in Stock Trading Area</h3>
-                                        <p>Working with thousands of traders worldwide, we understand the importance of having the proper tools and resources to trade well.</p>
+                                        <h3>Years of <span>experience</span> in the financial industry</h3>
+                                        <p>
+                                            Teaching thousands of traders worldwide, we understand the importance of individual approach. 
+                                            Our educators `use` comprehensive and unique strategies to make trading an interesting and rewarding experience. 
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="benefit-1">
-                                    <img src="/images/benefit-2.svg" alt="">
+                                    <img src="/images/signal.svg" alt="">
                                     <div>
                                         <h3>Only with us you will get real <span>Fast</span> Execution</h3>
                                         <p>Our IT Infrastructures has been deployed within industry leading datacenters in London (Equinix LD4) and New York (Equinix NY4)</p>
                                     </div>
                                 </div>
                                 <div class="benefit-1">
-                                    <img src="/images/benefit-3.svg" alt="">
+                                    <img src="/images/books.svg" alt="">
                                     <div>
                                         <h3>Low spreads system makes StocksTrade <span>Best Place</span> for trading</h3>
                                         <p>Our electronic pricing engine allows us price updating every currency pair three times per second, and thanks to this our prices reflect the current global forex market levels.</p>
@@ -90,24 +91,14 @@
                     <div class="row">
                         <div class="spreads">
                             <div class="spreads-header w-100">
-                                <h1>Our Spreads</h1>
+                                <h1>Learn And Trade</h1>
                             </div>
-                            <div class="spreads-circles">            
-                                <div class="ldBar label-center" style="width:210px;height:210px;margin:auto" data-value="66" data-preset="circle">
-                                  
-                                </div>
-                                <div class="ldBar label-center" style="width:210px;height:210px;margin:auto" data-value="25" data-preset="circle">
-
-                                </div>
-                                <div class="ldBar label-center" style="width:210px;height:210px;margin:auto" data-value="54" data-preset="circle">
-
-                                </div>
-                                <div class="ldBar label-center" style="width:210px;height:210px;margin:auto" data-value="95" data-preset="circle">
-
-                                </div>
-                            </div>
-                            <div class='text-center mt-5'>
-                                <button class="open-acc-btn">Open Account</button>
+                            <div class='trade-list'>
+                                <ul>
+                                    <li>Educate Yourself</li>
+                                    <li>"Use" Analysis</li>
+                                    <li>Master MT4 and MT5</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -126,24 +117,17 @@
                         <div class="about-stox-content">
                             <div class="about-content-1">
                                 <img src="/images/bear.svg" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum, 
-                                    quam sit amet sollicitudin porta, odio mauris malesuada ipsum, 
-                                    ac efficitur mauris quam ac neque. Aenean finibus lectus auctor arcu vestibulum, 
-                                    ac fringilla neque placerat. Maecenas lacinia pellentesque mattis. 
-                                    Suspendisse porta placerat lorem vitae consequat. 
-                                    Vivamus vehicula massa ac elit gravida, eget pellentesque diam vehicula. 
-                                    In finibus augue varius, aliquet sapien id, pellentesque ligula.
-                                </p>
+                                <img src="/images/bull.svg" alt="">
                             </div>
                             <div class="about-content-2">
-                                <img src="/images/bull.svg" alt="">
-                                <p>Nulla facilisi. Nam pellentesque consectetur justo, quis dapibus orci porta eu. 
-                                    Etiam nec nulla sit amet est fermentum eleifend vitae nec ligula. 
-                                    Praesent quis neque ac nunc varius aliquam. 
-                                    Aliquam vestibulum quis neque non congue. 
-                                    Cras faucibus finibus tortor vel gravida. Fusce consequat a ligula ut semper. 
-                                    Nullam vehicula eget nulla vel bibendum. Nam orci nulla, sollicitudin et fermentum eget, 
-                                    lacinia nec nisi. Etiam a nisi sed neque pretium vulputate. 
+                                <p>
+                                    StoxTrades offers education on Forex trading, CFDs, cryptocurrencies, and commodities. We have been always advocating high standards of teaching by using the most advanced techniques to make trading education practical for all kinds of traders. Our educational platform is designed to manage all the signals, get customer support and much more.
+                                    <br>
+                                    We want our clients to be successful, so our goal is to equip them with trading knowledge, which they can use in live trading.  
+                                    <br>
+                                    While we are not a trading platform, we are proud to work only with regulated brokers, which provide the world's leading financial products, innovative technology, and trading security. 
+                                    <br>
+                                    Get advantage of great teaching experience and we will refer you to trusted and regulated brokers to get hands-on experience. 
                                 </p>
                             </div>
                         </div>

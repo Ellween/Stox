@@ -11,12 +11,23 @@
 |
 */
 
+
+// Main Page
 Route::get('/', function () {
     return view('layout.index');
 });
 
-Route::get('/partnertship','PagesController@partners');
+// Pages
+Route::get('/partnership','PagesController@partners');
+Route::get('/education','PagesController@education');
+Route::get('/glossary','PagesController@get_glossary');
 
+
+// Search
+Route::post('/search','GlossaryController@search');
+
+
+// Login_registration
 Auth::routes();
 
 // Admin

@@ -38249,6 +38249,35 @@ $(document).ready(function () {
 
   $('.hamburger').click(function () {
     $('.hamburger').toggleClass("is-active");
+  }); //   Glossary Search System
+
+  $('#search').on('keyup', function () {
+    console.log($(this).val());
+    var word = $(this).val();
+    $.ajax({
+      headers: {
+        'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+      },
+      url: "/search",
+      type: 'POST',
+      data: {
+        word: word
+      },
+      success: function success(data) {
+        console.log(data);
+        var html = "";
+
+        for (var i = 0; i < data.length; i++) {
+          html += "\n            <div class=\"single-item\">\n              <h4>" + data[i].title + "</h4>\n              <p>- " + data[i].text + " </p>\n            </div>\n\n            ";
+          $('.glossary_items').html(html);
+        }
+
+        console.log(html);
+      },
+      error: function error() {
+        console.log('nope');
+      }
+    });
   });
 });
 
