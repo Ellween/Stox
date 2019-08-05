@@ -28,7 +28,7 @@
                                 </div>
                                 <form action="" class='w-100'>
                                     <input type="text" class='form-control' placeholder="Your Name">
-                                    <input type="text" class='form-control' placeholder="Your Email">
+                                    <input type="email" class='form-control' placeholder="Your Email">
                                     <textarea name="" id="" cols="30" rows="6" class='form-control' placeholder="Your Message"></textarea>
                                     <button class='btn btn-primary'>Get Started Trading</button>
                                 </form>
@@ -47,16 +47,16 @@
             <div class="row">
                 <div class="footer-nav">
                     <div class="copyright">
-                        © 2019 clikacrm All Right Reserved
+                        © 2019 Stoxtrades All Right Reserved
                     </div>
-                    <div class="navigation">
+                    {{-- <div class="navigation">
                         <ul>
                             <li>Trading</li>
                             <li>Partnership</li>
                             <li>Promotions</li>
                             <li>Analytics & Education</li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

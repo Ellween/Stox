@@ -7,7 +7,7 @@ use Auth;
 use Session;
 use App\User;
 use App\Glossary;
-use App\page;
+use App\Page;
 
 class AdminController extends Controller
 {

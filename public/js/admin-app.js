@@ -41231,7 +41231,7 @@ if (token) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\GamersParadise\Downloads\Open Server 5.2.9\OSPanel\domains\Stox\resources\js\admin-app.js */"./resources/js/admin-app.js");
+module.exports = __webpack_require__(/*! /home/alex/Desktop/Laravel/Stox/resources/js/admin-app.js */"./resources/js/admin-app.js");
 
 
 /***/ })

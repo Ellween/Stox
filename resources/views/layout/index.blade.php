@@ -9,7 +9,7 @@
                         <h1>Discover</h1>
                         <h2>Secrets of Succesfull Trading</h2>
                         <h3>Activate Your Account Now and</h3>
-                        <div class='d-flex align-items-center'>
+                        <div class='d-flex align-items-center get-free'>
                             <h5>Get Free</h5>
                             <div class='d-flex flex-column ml-5'>
                                 <h3>Trading Signals & Education</h3>
@@ -65,14 +65,14 @@
                                 </div>
                                 <div class="benefit-1">
                                     <img src="/images/signal.svg" alt="">
-                                    <div>
+                                    <div style='margin-left: 3rem;'>
                                         <h3>Only with us you will get real <span>Fast</span> Execution</h3>
                                         <p>Our IT Infrastructures has been deployed within industry leading datacenters in London (Equinix LD4) and New York (Equinix NY4)</p>
                                     </div>
                                 </div>
                                 <div class="benefit-1">
                                     <img src="/images/books.svg" alt="">
-                                    <div>
+                                    <div style ='margin-left: 2.2rem;'>
                                         <h3>Low spreads system makes StocksTrade <span>Best Place</span> for trading</h3>
                                         <p>Our electronic pricing engine allows us price updating every currency pair three times per second, and thanks to this our prices reflect the current global forex market levels.</p>
                                     </div>
@@ -97,7 +97,7 @@
                                 <ul>
                                     <li>Educate Yourself</li>
                                     <li>"Use" Analysis</li>
-                                    <li>Master MT4 and MT5</li>
+                                    <li>MetaTrader Rading Platform</li>
                                 </ul>
                             </div>
                         </div>

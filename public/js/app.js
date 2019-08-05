@@ -38265,11 +38265,21 @@ $(document).ready(function () {
       },
       success: function success(data) {
         console.log(data);
-        var html = "";
 
-        for (var i = 0; i < data.length; i++) {
-          html += "\n            <div class=\"single-item\">\n              <h4>" + data[i].title + "</h4>\n              <p>- " + data[i].text + " </p>\n            </div>\n\n            ";
-          $('.glossary_items').html(html);
+        if (data.length > 0) {
+          var html = "";
+
+          for (var i = 0; i < data.length; i++) {
+            html += "\n              <div class=\"single-item\">\n                <h4>" + data[i].title + "</h4>\n                <p>- " + data[i].text + " </p>\n              </div>\n  \n              ";
+            $('.glossary_items').html(html);
+          }
+        } else {
+          $('.glossary_items').html("Item Not Found").css({
+            'width': '1262px',
+            'font-weight': 500,
+            'font-size': '36px',
+            'color': '#02033D;'
+          });
         }
 
         console.log(html);
@@ -38301,8 +38311,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\GamersParadise\Downloads\Open Server 5.2.9\OSPanel\domains\Stox\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\GamersParadise\Downloads\Open Server 5.2.9\OSPanel\domains\Stox\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/alex/Desktop/Laravel/Stox/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/alex/Desktop/Laravel/Stox/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

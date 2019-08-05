@@ -21,8 +21,8 @@ class PagesController extends Controller
     public function get_glossary()
     {
         $glossaries = Glossary::orderBy('title')->get();
-
-        return view('layout.glossary',compact('glossaries'));
+        $first_letter = '';
+        return view('layout.glossary',compact('glossaries', 'first_letter'));
     }
 
     public function single($slug)

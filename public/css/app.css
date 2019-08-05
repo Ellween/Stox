@@ -19107,6 +19107,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.container {
+  max-width: 1262px;
+}
+
 .navbar {
   background: linear-gradient(174.21deg, #010289 1.36%, #1D30D5 88.7%);
 }
@@ -19331,12 +19335,14 @@ body {
 
 .our-spreads {
   background: linear-gradient(163.15deg, #010289 6.53%, #1D30D5 100%);
+  background-image: url("/images/our.png");
+  background-repeat: no-repeat;
   border-radius: 3px;
   margin-top: 60px;
 }
 
 .our-spreads .spreads {
-  padding: 40px 50px;
+  padding: 30px 50px;
   width: 100%;
 }
 
@@ -19396,11 +19402,11 @@ body {
 }
 
 .about {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .about .container {
-  max-width: 1247px;
+  max-width: 1262px;
 }
 
 .about-stox {
@@ -19446,7 +19452,7 @@ body {
 .main-footer {
   background: linear-gradient(165.94deg, #010289 6.53%, #1D30D5 100%);
   position: relative;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .main-footer::after {
@@ -19665,11 +19671,22 @@ body {
   margin-right: 45px;
 }
 
+.partners-detail .partners-content-1 .content-1-body .img_header h2 {
+  margin-bottom: 50px !important;
+}
+
 .partners-detail .partners-content-1 .content-1-body .img_header h4 {
   font-weight: 500;
   font-size: 36px;
   line-height: 43px;
   color: #02033D;
+  display: flex;
+}
+
+.partners-detail .partners-content-1 .content-1-body .img_header h4 img {
+  float: unset !important;
+  width: 144px;
+  height: 150px;
 }
 
 .partners-detail .partners-content-1 .content-1-body .img_header p {
@@ -19725,7 +19742,6 @@ body {
   z-index: 2;
   padding: 30px 50px;
   margin-bottom: 150px;
-  max-height: 2000px;
 }
 
 .glossary-detail .glossary_search {
@@ -19813,8 +19829,12 @@ body {
 
 .glossary-detail .glossary_items .single-item {
   display: flex;
-  padding: 10px 0px;
+  padding: 30px 0px;
   justify-content: space-between;
+}
+
+.glossary-detail .glossary_items .single-item:first-child {
+  margin-top: 50px;
 }
 
 .glossary-detail .glossary_items .single-item h4 {
@@ -19938,11 +19958,84 @@ body {
   }
 
   .main-content-head .header-text {
-    padding: 25px 8px !important;
+    padding: 70px 8px !important;
+  }
+
+  .main-content-head .header-text h5 {
+    font-size: 65px;
+  }
+
+  .our-spreads .spreads .trade-list ul li {
+    font-size: 27px;
+  }
+
+  .navbar h1 {
+    font-size: 25px !important;
+  }
+
+  .navbar .nav-item .nav-link {
+    font-size: 23px !important;
+  }
+
+  .index-benefits .container {
+    max-width: 995px;
+  }
+
+  .main-content-head .container {
+    max-width: 995px;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .trade-list {
+    margin-top: 1rem !important;
+  }
+
+  .trade-list ul {
+    display: block !important;
+    margin-left: -4px !important;
+  }
+
+  .trade-list ul li {
+    font-size: 25px !important;
+  }
+
+  .main-content-head .container {
+    max-width: 735px;
+  }
+
+  .main-footer .footer-details .footer-form form {
+    padding: 30px 44px !important;
+  }
+
+  .main-footer .footer-details .footer-form {
+    margin-right: 10px !important;
+  }
+
+  .get-free {
+    display: block !important;
+  }
+
+  .get-free div {
+    margin-left: 0px !important;
+  }
+
+  .our-spreads .spreads .trade-list ul li {
+    font-size: 22px;
+  }
+
+  .our-spreads .spreads .trade-list ul li {
+    margin: 0px 35px !important;
+  }
+
+  .index-benefits .container {
+    max-width: 735px;
+  }
+
+  .pay-img {
+    margin: 60px auto 0px auto;
+  }
+
   .main-footer .footer-details .footer-form {
     width: auto !important;
     top: auto !important;
@@ -19973,7 +20066,7 @@ body {
   }
 
   .main-content-head .header-text h5 {
-    line-height: 105px !important;
+    line-height: 75px !important;
   }
 
   .main-content-head .header-text h1 {
@@ -20003,9 +20096,67 @@ body {
   .glossary-detail .glossary_items .single-item p {
     padding-left: 70px !important;
   }
+
+  .single-item h1 {
+    left: 0px !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {
+  .main-footer .footer-details .footer-form {
+    margin-right: 0px !important;
+  }
+
+  .img_header h4 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    color: #02033D;
+    display: block !important;
+  }
+
+  .img_header h4 img {
+    float: unset !important;
+    width: 60% !important;
+    height: auto !important;
+    display: flex;
+    margin: 0 auto 20px auto !important;
+    margin-bottom: 20px;
+    margin-left: auto !important;
+  }
+
+  .glossary-detail .glossary_items .single-item {
+    padding: 15px 0px !important;
+  }
+
+  .about-stox .about-stox-content .about-content-1 p {
+    margin-left: 0px !important;
+  }
+
+  .about-content-1 img {
+    width: auto !important;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .about-stox .about-stox-content .about-content-2 p {
+    margin-left: 0px !important;
+  }
+
+  .about-content-2 img {
+    width: auto !important;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .navbar h1 {
+    font-size: 20px !important;
+  }
+
+  .single-item h1 {
+    display: none;
+  }
+
   .glossary-detail {
     margin-top: -200% !important;
   }
@@ -20027,7 +20178,7 @@ body {
   }
 
   .main-content-head .header-text {
-    padding: 0px;
+    padding: 30px 8px !important;
   }
 
   .main-content-head .header-text h1 {
@@ -20070,7 +20221,7 @@ body {
   }
 
   .benefit-1 img {
-    width: auto !important;
+    width: 60% !important;
     display: flex;
     margin: 0 auto;
   }
@@ -20240,34 +20391,56 @@ body {
 
   .glossary-detail .glossary_items .single-item p {
     width: 100%;
-    padding-left: 0px;
+    padding-left: 0px !important;
   }
 
   .iti--separate-dial-code {
     width: 100%;
+    height: 60px !important;
+    margin-top: 10px !important;
   }
 
   .form-details input,
   .form-details .main-footer .footer-details .footer-form form textarea,
   .main-footer .footer-details .footer-form form .form-details textarea {
-    height: 50px !important;
+    height: 60px !important;
   }
 
   .btn-submit {
     margin-top: 20px;
+    margin-bottom: 15px;
   }
 
   .our-spreads .spreads .spreads-header h1 {
-    font-size: 38px;
+    font-size: 33px;
+    line-height: 0px !important;
     padding: 0 45px;
   }
 
   .our-spreads .spreads .trade-list ul li:first-child {
     margin: 0 51px !important;
   }
+
+  .our-spreads .spreads .trade-list ul li {
+    margin: 0 51px !important;
+  }
+
+  #phone {
+    margin: 0px !important;
+    padding: 0 !important;
+    height: 100% !important;
+  }
 }
 
 @media only screen and (max-width: 320px) {
+  .partners-detail .partners-content-1 .content-1-body h2 {
+    font-size: 32px !important;
+  }
+
+  .navbar h1 {
+    font-size: 15px !important;
+  }
+
   .partners-detail .partners-head h1 {
     font-size: 55px !important;
   }

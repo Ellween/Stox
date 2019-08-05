@@ -77,21 +77,29 @@ $(document).ready(function () {
         {
 
           console.log(data);
-          var html="";
 
-          for(let i = 0; i< data.length; i++)
+          if(data.length > 0)
           {
-            html +=  
-            `
-            <div class="single-item">
-              <h4>`+ data[i].title +`</h4>
-              <p>- ` + data[i].text + ` </p>
-            </div>
+            var html="";
 
-            `;
-
-            $('.glossary_items').html(html);
+            for(let i = 0; i< data.length; i++)
+            {
+              html +=  
+              `
+              <div class="single-item">
+                <h4>`+ data[i].title +`</h4>
+                <p>- ` + data[i].text + ` </p>
+              </div>
+  
+              `;
+  
+              $('.glossary_items').html(html);
+            }
+          } else {
+            
+            $('.glossary_items').html("Item Not Found").css({'width': '1262px', 'font-weight': 500 , 'font-size': '36px', 'color': '#02033D;' });
           }
+          
 
           console.log(html);
         },

@@ -2,6 +2,11 @@ body {
     font-family: $font-family;
 }
 
+
+.container {
+    max-width: 1262px;
+}
+
 // Navigation
 
 .navbar {
@@ -62,6 +67,8 @@ body {
         padding: 100px 8px;
         padding-right: 0px;
         padding-bottom: 40px;
+        
+
         h1 {
             font-weight: bold;
             font-size: 144px;
@@ -128,6 +135,7 @@ body {
     }
 }
 
+
 // Benefits
 
 .index-benefits {
@@ -181,10 +189,12 @@ body {
 
 .our-spreads {
     background: linear-gradient(163.15deg, #010289 6.53%, #1D30D5 100%);
+    background-image: url("/images/our.png"); 
+    background-repeat: no-repeat;
     border-radius: 3px;
     margin-top: 60px;
     .spreads{
-        padding: 40px 50px;
+        padding: 30px 50px;
         width: 100%;
 
         .spreads-header {
@@ -245,9 +255,9 @@ body {
 // About Stox
 
 .about {
-    margin-top: 80px;
+    margin-top: 60px;
     .container {
-        max-width: 1247px;
+        max-width:1262px;
     }
 }
 
@@ -302,7 +312,7 @@ body {
 .main-footer{
     background: linear-gradient(165.94deg, #010289 6.53%, #1D30D5 100%);
     position: relative;
-    margin-top: 50px;
+    margin-top: 60px;
     &::after{
         content: "";
         background-image: url("/images/footer-bg.png");
@@ -481,11 +491,20 @@ body {
             }
             .img_header{
                 // padding:0px 45px;
+                h2 {
+                    margin-bottom: 50px !important;
+                }
                 h4{
                     font-weight: 500;
                     font-size: 36px;
                     line-height: 43px;
                     color: #02033D;
+                    display: flex;
+                    img {
+                        float: unset !important;
+                        width: 144px;
+                        height: 150px;
+                    }
                 }
                 p{
                     padding-left: 190px;
@@ -550,7 +569,6 @@ body {
     z-index: 2;
     padding: 30px 50px;
     margin-bottom: 150px;
-    max-height: 2000px;
     .glossary_search{
         width: 50%;
         margin-top: 30px;
@@ -588,8 +606,11 @@ body {
         padding: 70px;
         .single-item {
             display: flex;
-            padding: 10px 0px;
+            padding: 30px 0px;
             justify-content: space-between;
+            &:first-child{
+                margin-top: 50px;
+            }
             h4{
                 font-weight: 500;
                 font-size: 36px;
