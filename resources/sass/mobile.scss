@@ -25,10 +25,20 @@
     .navbar h1 {
         font-size: 15px !important;
     }
+
+    .main-footer .footer-details .footer-form
+    {
+        width: 90%;
+    }
 }
 
 
 @media only screen and (max-width: 1140px) {
+
+    .main-content-head .header-text {
+        padding: 40px 8px !important;
+    }
+
     .nav-link {
         font-size: 12px !important;
     }
@@ -66,17 +76,60 @@
 }
 
 @media only screen and (max-width: 1024px) {
+
+.form-details input::placeholder {
+    font-size: 17px !important;
+}
+
     .main-footer .footer-details .footer-form{
-        width: 485px !important;
+        width: 90% !important;
     }
 
     .main-content-head .header-text {
-        padding: 70px 8px !important;
+        padding: 50px 8px !important;
     }
 
     .main-content-head .header-text h5
     {
         font-size: 65px;
+        line-height: 85px;
+    }
+
+    .our-spreads .spreads .trade-list ul li {
+        font-size: 27px;
+    }
+
+    .navbar h1
+    {
+        font-size: 25px !important;
+    }
+    .navbar .nav-item .nav-link
+    {
+        font-size: 23px !important;
+    }
+
+    .index-benefits .container {
+        max-width: 995px;
+    }
+
+    .main-content-head .container {
+        max-width: 995px;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .main-footer .footer-details .footer-form{
+        width: 90% !important;
+    }
+
+    .main-content-head .header-text {
+        padding: 0px 8px !important;
+    }
+
+    .main-content-head .header-text h5
+    {
+        font-size: 65px;
+        line-height: 85px;
     }
 
     .our-spreads .spreads .trade-list ul li {
@@ -102,6 +155,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    .main-content-head .header-form .form-details
+
+    {
+        padding: 1rem 0.5rem !important;
+    }
 
     .trade-list {
        margin-top: 1rem !important;
@@ -226,6 +285,21 @@ padding-left: 70px !important;
 
 @media only screen and (max-width: 767px) {
 
+    #phone::placeholder {
+        padding-right: 45px !important;
+    }
+
+
+    .glossary-detail {
+        margin-top: -100% !important;
+    }
+
+
+    .index-benefits .benefits .benefit-1 div p
+     {
+         margin-top: 20px;
+     }
+
     .main-footer .footer-details .footer-form {
         margin-right: 0px !important;
     }
@@ -287,14 +361,12 @@ padding-left: 70px !important;
         display: none;
     }
 
-    .glossary-detail {
-        margin-top: -200%  !important;
-    }
+    // .glossary-detail {
+    //     margin-top: -200%  !important;
+    // }
 
     
-    img {
-        width: 100%;
-    }
+    
 
     .form-mail img {
         width: auto !important;
@@ -553,14 +625,31 @@ padding-left: 70px !important;
 
     #phone {
         margin: 0px !important;
-        padding: 0 !important;
         height: 100% !important;
     }
 
 }
 
 
+@media only screen and (max-width: 500px) {
+
+    .glossary-detail {
+        margin-top: -170% !important;
+    }
+}
+
+
 @media only screen and (max-width: 320px) {
+
+    .spreads {
+        padding: 10px 0px !important;
+    }
+
+    .our-spreads .spreads .spreads-header h1
+    {
+        line-height: 40px !important;
+    }
+
 
     .partners-detail .partners-content-1 .content-1-body h2 {
         font-size: 32px !important;

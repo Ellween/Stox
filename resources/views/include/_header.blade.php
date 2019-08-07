@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg p-0">
     <div class ='d-flex align-items-center'>
         <a class="navbar-brand m-0" href="/"><img src="/images/logo.svg" alt=""></a>
-        <h1>STOXTRADES</h1>
+        <a style ='text-decoration:none;' href='/'><h1>STOXTRADES</h1></a>
     </div>
     <button class="hamburger hamburger--spin navbar-toggler" type="button" aria-label="Menu" aria-controls="navigation" data-toggle="collapse" data-target="#navbarSupportedContent">
         <span class="hamburger-box">

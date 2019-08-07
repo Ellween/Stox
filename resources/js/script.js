@@ -5,6 +5,8 @@ $(document).ready(function () {
         this.value = this.value.replace(/[^0-9 +]/g, '');
       }
     });
+
+    
     var input = $("input[name='phone']"),
         errorMsg = $(".error-msg"),
         validMsg = $(".valid-msg"); // here, the index maps to the error code returned from getValidationError - see readme
@@ -19,6 +21,8 @@ $(document).ready(function () {
     }; // on keyup / change flag: reset
   
   
+    
+
     input.on('change keyup input', reset);
     var phone_input = document.querySelector("#phone");
   

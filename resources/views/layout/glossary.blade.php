@@ -23,7 +23,7 @@
                         <div class="single-item" style ='position:relative' >
                             @if($glossary->title[0] != $first_letter)
                                 <?php $first_letter = $glossary->title[0]; ?>
-                                <h1 style ='position: absolute; top: -50px; left: -70px;color: #F24823;' >{{ $first_letter }} </h1>
+                                <h1  style ='position: absolute; top: -50px; left: -70px;color: #F24823;' >{{ $first_letter }} </h1>
                             @endif
                             <h4>{{ $glossary->title }}</h4>
                             <p>- {{ $glossary->text }} </p>

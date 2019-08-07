@@ -7,7 +7,7 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                     <div class="header-text">
                         <h1>Discover</h1>
-                        <h2>Secrets of Succesfull Trading</h2>
+                        <h2>Secrets of Successfull Trading</h2>
                         <h3>Activate Your Account Now and</h3>
                         <div class='d-flex align-items-center get-free'>
                             <h5>Get Free</h5>
@@ -32,7 +32,7 @@
                                         <input type="email" class='form-control' placeholder="Your E-mail">
                                     </div>
                                     <div class="col-lg-3 col-md-3 col-sm-12">
-                                        <input type="tel" name='phone' id="phone" class='form-control' placeholder="Phone">
+                                        <input type="tel" name='phone' id="phone" class='form-control' placeholder="Enter Your Phone">
                                     </div>
                                     <div class="col-lg-3 col-md-3 col-sm-12">
                                         <button type="submit" value="" class='form-control btn-submit'>Submit</button>
@@ -66,15 +66,15 @@
                                 <div class="benefit-1">
                                     <img src="/images/signal.svg" alt="">
                                     <div style='margin-left: 3rem;'>
-                                        <h3>Only with us you will get real <span>Fast</span> Execution</h3>
-                                        <p>Our IT Infrastructures has been deployed within industry leading datacenters in London (Equinix LD4) and New York (Equinix NY4)</p>
+                                        <h3>Variety of <span>information</span> on different markets</h3>
+                                        <p>We provide alerts or signals about many trading opportunities on the foreign currencies, stocks, indices, and commodities. Our free pips alerts help students make income-generating decisions. </p>
                                     </div>
                                 </div>
                                 <div class="benefit-1">
                                     <img src="/images/books.svg" alt="">
                                     <div style ='margin-left: 2.2rem;'>
-                                        <h3>Low spreads system makes StocksTrade <span>Best Place</span> for trading</h3>
-                                        <p>Our electronic pricing engine allows us price updating every currency pair three times per second, and thanks to this our prices reflect the current global forex market levels.</p>
+                                        <h3>Learning in-depth with our <span>library</span></h3>
+                                        <p>Our educational library offers multiple resources, such as e-books, video courses, training software, and many more perfect for both, new and experienced traders. </p>
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +97,7 @@
                                 <ul>
                                     <li>Educate Yourself</li>
                                     <li>"Use" Analysis</li>
-                                    <li>MetaTrader Rading Platform</li>
+                                    <li>MetaTrader Trading Platform</li>
                                 </ul>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                         <div class="about-stox-content">
                             <div class="about-content-1">
                                 <img src="/images/bear.svg" alt="">
-                               <p>StoxTrades offers education on Forex trading, CFDs, cryptocurrencies, and  
+                               <p>StoxTrades offers education on Forex trading, CFD's, cryptocurrencies, and  
                                    commodities. We have been always advocating high standards of teaching by 
                                    using the most advanced techniques to make trading education practical for all kinds of traders. 
                                    Our educational platform is designed to manage all the signals, get customer support and much more.
@@ -126,12 +126,14 @@
                             </div>
                             <div class="about-content-2">
                                 <img src="/images/bull.svg" alt="">
-                                <p>We want our clients to be successful, so our goal is to equip them with trading knowledge, which they can use in live trading.  
+                                <div>
+                                    <p>We want our clients to be successful, so our goal is to equip them with trading knowledge, which they can use in live trading.  </p>
 
-                                        While we are not a trading platform, we are proud to work only with regulated brokers, which provide the world's leading financial products, innovative technology, and trading security. 
+                                    <p>    While we are not a trading platform, we are proud to work only with regulated brokers, which provide the world's leading financial products, innovative technology, and trading security. </p> 
                                         
-                                        Get advantage of great teaching experience and we will refer you to trusted and regulated brokers to get hands-on experience. </p>
-                            </div>
+                                    <p>  Get advantage of great teaching experience and we will refer you to trusted and regulated brokers to get hands-on experience. </p>
+                                </div>
+                                </div>
                         </div>
                     </div>
                 </div>

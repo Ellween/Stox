@@ -71,7 +71,7 @@ class AdminController extends Controller
     public function add_glossary(Request $request)
     {
         $glossary = Glossary::create([
-            'title' => request('title'),
+            'title' => ucfirst(request('title')),
             'text' => request('text')
         ]);
         $user = auth()->guard('admin')->user();

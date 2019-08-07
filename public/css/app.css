@@ -19492,10 +19492,16 @@ body {
   position: absolute;
   top: 100px;
   width: 539px;
-  height: 494px;
+  height: auto;
   background: #FFFFFF;
   box-shadow: 0px 0px 20px rgba(29, 17, 86, 0.115517);
   z-index: 2;
+}
+
+.main-footer .footer-details .footer-form .form-header {
+  display: flex;
+  flex-direction: column;
+  width: 77%;
 }
 
 .main-footer .footer-details .footer-form .form-header div {
@@ -19512,11 +19518,12 @@ body {
 
 .main-footer .footer-details .footer-form form input,
 .main-footer .footer-details .footer-form form textarea {
+  color: black;
   margin-bottom: 20px;
   border: 1px solid #374CFF;
   mix-blend-mode: normal;
   box-sizing: border-box;
-  opacity: 0.2;
+  opacity: 0.6;
   border-radius: 0px;
 }
 
@@ -19525,6 +19532,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.5px;
+  opacity: 0.2;
   color: #303030 !important;
 }
 
@@ -19533,6 +19541,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.5px;
+  opacity: 0.2;
   color: #303030 !important;
 }
 
@@ -19541,6 +19550,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.5px;
+  opacity: 0.2;
   color: #303030 !important;
 }
 
@@ -19549,6 +19559,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.5px;
+  opacity: 0.2;
   color: #303030 !important;
 }
 
@@ -19557,6 +19568,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.5px;
+  opacity: 0.2;
   color: #303030 !important;
 }
 
@@ -19904,9 +19916,17 @@ body {
   .navbar h1 {
     font-size: 15px !important;
   }
+
+  .main-footer .footer-details .footer-form {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
+  .main-content-head .header-text {
+    padding: 40px 8px !important;
+  }
+
   .nav-link {
     font-size: 12px !important;
   }
@@ -19953,16 +19973,78 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
+  .form-details input::-webkit-input-placeholder,
+  .form-details .main-footer .footer-details .footer-form form textarea::-webkit-input-placeholder,
+  .main-footer .footer-details .footer-form form .form-details textarea::-webkit-input-placeholder {
+    font-size: 17px !important;
+  }
+  .form-details input::-moz-placeholder,
+  .form-details .main-footer .footer-details .footer-form form textarea::-moz-placeholder,
+  .main-footer .footer-details .footer-form form .form-details textarea::-moz-placeholder {
+    font-size: 17px !important;
+  }
+  .form-details input:-ms-input-placeholder,
+  .form-details .main-footer .footer-details .footer-form form textarea:-ms-input-placeholder,
+  .main-footer .footer-details .footer-form form .form-details textarea:-ms-input-placeholder {
+    font-size: 17px !important;
+  }
+  .form-details input::-ms-input-placeholder,
+  .form-details .main-footer .footer-details .footer-form form textarea::-ms-input-placeholder,
+  .main-footer .footer-details .footer-form form .form-details textarea::-ms-input-placeholder {
+    font-size: 17px !important;
+  }
+  .form-details input::placeholder,
+  .form-details .main-footer .footer-details .footer-form form textarea::placeholder,
+  .main-footer .footer-details .footer-form form .form-details textarea::placeholder {
+    font-size: 17px !important;
+  }
+
   .main-footer .footer-details .footer-form {
-    width: 485px !important;
+    width: 90% !important;
   }
 
   .main-content-head .header-text {
-    padding: 70px 8px !important;
+    padding: 50px 8px !important;
   }
 
   .main-content-head .header-text h5 {
     font-size: 65px;
+    line-height: 85px;
+  }
+
+  .our-spreads .spreads .trade-list ul li {
+    font-size: 27px;
+  }
+
+  .navbar h1 {
+    font-size: 25px !important;
+  }
+
+  .navbar .nav-item .nav-link {
+    font-size: 23px !important;
+  }
+
+  .index-benefits .container {
+    max-width: 995px;
+  }
+
+  .main-content-head .container {
+    max-width: 995px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .main-footer .footer-details .footer-form {
+    width: 90% !important;
+  }
+
+  .main-content-head .header-text {
+    padding: 0px 8px !important;
+  }
+
+  .main-content-head .header-text h5 {
+    font-size: 65px;
+    line-height: 85px;
   }
 
   .our-spreads .spreads .trade-list ul li {
@@ -19987,6 +20069,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .main-content-head .header-form .form-details {
+    padding: 1rem 0.5rem !important;
+  }
+
   .trade-list {
     margin-top: 1rem !important;
   }
@@ -20103,6 +20189,30 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  #phone::-webkit-input-placeholder {
+    padding-right: 45px !important;
+  }
+  #phone::-moz-placeholder {
+    padding-right: 45px !important;
+  }
+  #phone:-ms-input-placeholder {
+    padding-right: 45px !important;
+  }
+  #phone::-ms-input-placeholder {
+    padding-right: 45px !important;
+  }
+  #phone::placeholder {
+    padding-right: 45px !important;
+  }
+
+  .glossary-detail {
+    margin-top: -100% !important;
+  }
+
+  .index-benefits .benefits .benefit-1 div p {
+    margin-top: 20px;
+  }
+
   .main-footer .footer-details .footer-form {
     margin-right: 0px !important;
   }
@@ -20155,14 +20265,6 @@ body {
 
   .single-item h1 {
     display: none;
-  }
-
-  .glossary-detail {
-    margin-top: -200% !important;
-  }
-
-  img {
-    width: 100%;
   }
 
   .form-mail img {
@@ -20427,12 +20529,25 @@ body {
 
   #phone {
     margin: 0px !important;
-    padding: 0 !important;
     height: 100% !important;
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .glossary-detail {
+    margin-top: -170% !important;
+  }
+}
+
 @media only screen and (max-width: 320px) {
+  .spreads {
+    padding: 10px 0px !important;
+  }
+
+  .our-spreads .spreads .spreads-header h1 {
+    line-height: 40px !important;
+  }
+
   .partners-detail .partners-content-1 .content-1-body h2 {
     font-size: 32px !important;
   }

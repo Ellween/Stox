@@ -17,7 +17,7 @@
             </div>
             <form action="">
                 <div class="modal-body">
-                    <input type="text" placeholder="Enter title" name='title' id='glossary_title' class='form-control'>
+                    <input type="text"  placeholder="Enter title" name='title' id='glossary_title' class='form-control'>
                     <textarea name="body" cols="30" rows="5"  id='glossary_text' placeholder="Enter Text" class='form-control mt-2'></textarea>
                 </div>
                 <div class="modal-footer">

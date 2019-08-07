@@ -6,7 +6,7 @@
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <div class="footer-header">
-                                <h1>Request A Callback</h1>
+                                <h1>Request A Call-back</h1>
                             </div>
                             <div class="footer-content">
                                 If you have any questions, suggestions or any inquiries regarding our service, 
@@ -19,11 +19,16 @@
                                 <div class="form-header">
                                     <div class='form-mail d-flex align-items-center'>
                                         <img src="/images/phone.svg" alt="">
-                                        <p style='margin:0;'>+31 40 50 932</p>
+                                        <p style='margin:0;'>+44 20 39 66 5785</p>
                                     </div>
                                     <div class="form-phone d-flex align-items-center">
                                         <img src="/images/mail.svg" alt="">
-                                        <p style='margin:0;'>info@tradforex.com</p>
+                                        <p style='margin:0;'>support@stoxtrades.com</p>
+                                    </div>
+                                    <div class="form-phone d-flex align-items-center">
+                                        <img src="/images/map.svg" alt="">
+                                        <p style='margin:0;'>Suite 305, Griffith Corporate Centre, Beachmont, Kingstown, Saint Vincent 
+                                            and the Grenadines.</p>
                                     </div>
                                 </div>
                                 <form action="" class='w-100'>
