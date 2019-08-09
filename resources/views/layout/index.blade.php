@@ -7,7 +7,7 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                     <div class="header-text">
                         <h1>Discover</h1>
-                        <h2>Secrets of Successfull Trading</h2>
+                        <h2>Secrets of Successful Trading</h2>
                         <h3>Activate Your Account Now and</h3>
                         <div class='d-flex align-items-center get-free'>
                             <h5>Get Free</h5>

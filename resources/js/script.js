@@ -100,8 +100,8 @@ $(document).ready(function () {
               $('.glossary_items').html(html);
             }
           } else {
-            
-            $('.glossary_items').html("Item Not Found").css({'width': '1262px', 'font-weight': 500 , 'font-size': '36px', 'color': '#02033D;' });
+            $('.glossary-detail').css({'width':'100%', 'overflow':'hidden'});
+            $('.glossary_items').html("Item Not Found").css({'width': '1163px', 'font-weight': 500 , 'font-size': '36px', 'color': '#02033D;' });
           }
           
 

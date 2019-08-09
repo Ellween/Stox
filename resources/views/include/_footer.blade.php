@@ -31,10 +31,11 @@
                                             and the Grenadines.</p>
                                     </div>
                                 </div>
-                                <form action="" class='w-100'>
-                                    <input type="text" class='form-control' placeholder="Your Name">
-                                    <input type="email" class='form-control' placeholder="Your Email">
-                                    <textarea name="" id="" cols="30" rows="6" class='form-control' placeholder="Your Message"></textarea>
+                                <form action="{{route('mail_send')}}" class='w-100' method="POST">
+                                    @csrf
+                                    <input name='name' type="text" class='form-control' placeholder="Your Name">
+                                    <input name='email' type="email" class='form-control' placeholder="Your Email">
+                                    <textarea name="text" id="" cols="30" rows="6" class='form-control' placeholder="Your Message"></textarea>
                                     <button class='btn btn-primary'>Get Started Trading</button>
                                 </form>
                             </div>

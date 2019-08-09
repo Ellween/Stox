@@ -31,13 +31,16 @@ Route::post('/add_page','PageController@store');
 
 // get page
 
-Route::get('/{slug}','PagesController@single')->name('single');
+ Route::get('/page/{slug}','PagesController@single')->name('single');
 
 // Login_registration
 Auth::routes();
+Route::get('/logout','Auth\LoginController@logout');
+
 
 // Admin
 Route::prefix('admin')->group(function(){
+    Route::get('/','AdminController@login')->name('admin-login');
     Route::get('/login','AdminController@login')->name('admin-login');
     Route::post('/login-admin','AdminController@login_admin')->name('login-admin');
 
@@ -63,5 +66,9 @@ Route::prefix('admin')->group(function(){
 });
 
 
+
+// Send Mail 
+
+Route::post('/send_mail','MailController@send')->name('mail_send');
 
 Route::get('/home', 'HomeController@index')->name('home');

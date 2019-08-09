@@ -16,7 +16,7 @@
             </li>
             @foreach ($menu as $menu)
                 <li class="nav-item">
-                    <a class="nav-link" href="/{{ $menu->slug }}"> {{ $menu->title }}</a>
+                    <a class="nav-link" href="/page/{{ $menu->slug }}"> {{ $menu->title }}</a>
                 </li>
             @endforeach
             <li class="nav-item">
