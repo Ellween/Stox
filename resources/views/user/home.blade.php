@@ -43,18 +43,13 @@
             }
 
             .personal_bg {
-                background: linear-gradient(169.48deg, #010289 15.67%, #1D30D5 100%);
-                height: 500px;;
+                background-image: url("/images/peronal_bg.png");
+                height: auto;
+                background-size: cover;
+                padding: 0px 0px 120px 0px;
             }
 
-            .personal_bg::after {
-                content: "";
-                background-image: url("/images/personal.png");
-                height: 500px;
-                width: 100%;
-                background-repeat: no-repeat;
-                position: absolute;
-            }
+           
             
         </style>
         

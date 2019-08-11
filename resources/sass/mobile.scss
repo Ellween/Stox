@@ -77,9 +77,25 @@
 
 @media only screen and (max-width: 1024px) {
 
-.form-details input::placeholder {
-    font-size: 17px !important;
-}
+    .header_nav ul li {
+        margin: 30px 50px;
+    }
+
+    .header_nav ul li:first-child {
+        margin-left: 95px !important;
+    }    
+
+    .brokers ul li {
+        margin: 0 40px !important;
+    }
+
+    .brokers ul li:first-child {
+        margin-left: 80px !important;
+    }
+
+    .form-details input::placeholder {
+        font-size: 17px !important;
+    }
 
     .main-footer .footer-details .footer-form{
         width: 90% !important;
@@ -156,8 +172,34 @@
 
 @media only screen and (max-width: 768px) {
 
+    .my_broker h1 {
+        margin-left: 0px !important;
+    }
     
+    
+    .brokers ul li:first-child {
+        margin-left: 0px !important; 
+    }
 
+    .brokers ul li {
+        margin: 0 10px !important;
+    }
+
+    .header_nav ul li {
+        margin: 30px 20px !important;
+    }
+    
+    .header_nav ul li:first-child {
+        margin-left: 80px !important;
+    }
+
+    .personal_info .personal_info_header h1 {
+        font-size: 60px;
+    }
+    
+    .personal_info .personal_info_form{
+        width: 100% !important;
+    }
 
     .main-content-head .header-form .form-details
 
@@ -287,6 +329,52 @@ padding-left: 70px !important;
 }
 
 @media only screen and (max-width: 767px) {
+
+    .brokers {
+        width: 100%;
+    }
+
+    .personal_bg {
+        height: auto !important;
+    }
+
+    .brokers ul {
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .brokers ul li {
+        margin-top: 20px !important;
+    }
+    
+    .header_nav ul{
+        display: inline;
+    }
+
+    .personal_info_form{
+        display: inline !important;
+    }
+
+    .personal_support {
+        display: initial !important;
+    }
+
+    .personal_info {
+        margin: 0px !important;
+    }
+
+    .personal_info .personal_info_form .personal_inputs {
+        width: 100%;
+    }
+
+    .header_nav ul li:first-child {
+        margin-left: 20px !important;
+    }
+
+    .man_img {
+        margin-top: 100px;
+    }
 
     .sign-up-form input {
         width: 100% !important;
@@ -652,6 +740,10 @@ padding-left: 70px !important;
 
 
 @media only screen and (max-width: 320px) {
+
+    .personal_info .personal_info_header h1 {
+        font-size: 50px !important;
+    }
 
     .spreads {
         padding: 10px 0px !important;

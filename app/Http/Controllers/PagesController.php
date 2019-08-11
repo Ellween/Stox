@@ -36,4 +36,9 @@ class PagesController extends Controller
     {
         return view('user.layout.index');
     }
+
+    public function my_broker()
+    {
+        return view('user.layout.my-broker');
+    }
 }

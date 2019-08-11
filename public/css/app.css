@@ -20071,6 +20071,135 @@ body {
   border: none;
 }
 
+.header_nav {
+  width: 100%;
+}
+
+.header_nav ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+
+.header_nav ul li {
+  margin: 30px 60px;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  font-weight: bold;
+  mix-blend-mode: normal;
+  text-shadow: 0px -2px 4px rgba(151, 58, 211, 0.25);
+  opacity: 0.7;
+}
+
+.header_nav ul li:first-child {
+  margin-left: 95px;
+}
+
+.personal_info {
+  width: 100%;
+  margin: 0 80px;
+}
+
+.personal_info .personal_info_header h1 {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 86px;
+  color: #FFFFFF;
+}
+
+.personal_info .personal_info_header p {
+  font-size: 22px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.personal_info .personal_info_form {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.personal_info .personal_info_form .personal_inputs {
+  width: 35%;
+}
+
+.personal_info .personal_info_form .personal_inputs input,
+.personal_info .personal_info_form .personal_inputs .main-footer .footer-details .footer-form form textarea,
+.main-footer .footer-details .footer-form form .personal_info .personal_info_form .personal_inputs textarea {
+  background: #ffffff;
+  z-index: 99999;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.personal_info .personal_info_form .man_img img {
+  width: 100%;
+}
+
+.my_broker {
+  width: 100%;
+}
+
+.my_broker h1 {
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 86px;
+  color: #FFFFFF;
+  margin-left: 80px;
+}
+
+.brokers {
+  margin-top: 50px;
+}
+
+.brokers ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+.brokers ul li {
+  margin: 0 75px;
+}
+
+.brokers ul li:first-child {
+  margin-left: 80px;
+}
+
+.brokers ul li button {
+  padding: 15px 30px;
+  border: none;
+  background: linear-gradient(180deg, #040682 0%, #040561 100%);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  text-shadow: 0px -2px 4px rgba(151, 58, 211, 0.25);
+}
+
+.brokers ul li button:focus {
+  outline: none;
+}
+
+.brokers ul li p {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  text-shadow: 0px -2px 4px rgba(151, 58, 211, 0.25);
+}
+
 .iti__flag {
   background-image: url("/images/vendor/intl-tel-input/build/flags.png");
 }
@@ -20168,26 +20297,46 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
+  .header_nav ul li {
+    margin: 30px 50px;
+  }
+
+  .header_nav ul li:first-child {
+    margin-left: 95px !important;
+  }
+
+  .brokers ul li {
+    margin: 0 40px !important;
+  }
+
+  .brokers ul li:first-child {
+    margin-left: 80px !important;
+  }
+
   .form-details input::-webkit-input-placeholder,
   .form-details .main-footer .footer-details .footer-form form textarea::-webkit-input-placeholder,
   .main-footer .footer-details .footer-form form .form-details textarea::-webkit-input-placeholder {
     font-size: 17px !important;
   }
+
   .form-details input::-moz-placeholder,
   .form-details .main-footer .footer-details .footer-form form textarea::-moz-placeholder,
   .main-footer .footer-details .footer-form form .form-details textarea::-moz-placeholder {
     font-size: 17px !important;
   }
+
   .form-details input:-ms-input-placeholder,
   .form-details .main-footer .footer-details .footer-form form textarea:-ms-input-placeholder,
   .main-footer .footer-details .footer-form form .form-details textarea:-ms-input-placeholder {
     font-size: 17px !important;
   }
+
   .form-details input::-ms-input-placeholder,
   .form-details .main-footer .footer-details .footer-form form textarea::-ms-input-placeholder,
   .main-footer .footer-details .footer-form form .form-details textarea::-ms-input-placeholder {
     font-size: 17px !important;
   }
+
   .form-details input::placeholder,
   .form-details .main-footer .footer-details .footer-form form textarea::placeholder,
   .main-footer .footer-details .footer-form form .form-details textarea::placeholder {
@@ -20264,6 +20413,34 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .my_broker h1 {
+    margin-left: 0px !important;
+  }
+
+  .brokers ul li:first-child {
+    margin-left: 0px !important;
+  }
+
+  .brokers ul li {
+    margin: 0 10px !important;
+  }
+
+  .header_nav ul li {
+    margin: 30px 20px !important;
+  }
+
+  .header_nav ul li:first-child {
+    margin-left: 80px !important;
+  }
+
+  .personal_info .personal_info_header h1 {
+    font-size: 60px;
+  }
+
+  .personal_info .personal_info_form {
+    width: 100% !important;
+  }
+
   .main-content-head .header-form .form-details {
     padding: 1rem 0.5rem !important;
   }
@@ -20384,6 +20561,52 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  .brokers {
+    width: 100%;
+  }
+
+  .personal_bg {
+    height: auto !important;
+  }
+
+  .brokers ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brokers ul li {
+    margin-top: 20px !important;
+  }
+
+  .header_nav ul {
+    display: inline;
+  }
+
+  .personal_info_form {
+    display: inline !important;
+  }
+
+  .personal_support {
+    display: initial !important;
+  }
+
+  .personal_info {
+    margin: 0px !important;
+  }
+
+  .personal_info .personal_info_form .personal_inputs {
+    width: 100%;
+  }
+
+  .header_nav ul li:first-child {
+    margin-left: 20px !important;
+  }
+
+  .man_img {
+    margin-top: 100px;
+  }
+
   .sign-up-form input,
   .sign-up-form .main-footer .footer-details .footer-form form textarea,
   .main-footer .footer-details .footer-form form .sign-up-form textarea {
@@ -20751,6 +20974,10 @@ body {
 }
 
 @media only screen and (max-width: 320px) {
+  .personal_info .personal_info_header h1 {
+    font-size: 50px !important;
+  }
+
   .spreads {
     padding: 10px 0px !important;
   }

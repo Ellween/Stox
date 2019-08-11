@@ -67,7 +67,8 @@ Route::prefix('admin')->group(function(){
 
 // User Page
 
-Route::get('/dashboard','PagesController@user_dash')->name('user_dashboard');
+Route::get('/dashboard','PagesController@user_dash')->name('user_dashboard')->middleware('auth');;
+Route::get('/my-broker','PagesController@my_broker')->name('my-broker')->middleware('auth');;
 
 
 
