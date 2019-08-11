@@ -9,6 +9,7 @@ require('./bootstrap');
 
 import intlTelInput from 'intl-tel-input';
 window.intlTelInput = intlTelInput; 
+import 'jquery-validation';
 
 
 require('./script');

@@ -651,6 +651,134 @@ body {
 
 
 
+
+// Sign-up Login
+
+#Login-Signup{
+    .modal-dialog{
+        margin: 6rem auto;
+        .modal-content{
+            border-radius: 3px;
+        }
+    }
+}
+
+.sign-up-form label {
+    position: absolute;
+    left: 50%;
+    color: red;
+}
+
+.modal-content {
+
+    .sing-up-block {
+        display: none;
+        @extend .login-form;
+        &.active {
+            display: block;
+        }
+    }
+
+    .sign-up-header{
+        border: none;
+        button{
+            &:focus {
+                outline: none;
+            }
+        }
+        .sing-up-login{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            p{
+                margin: 0 15px;
+                font-weight: bold;
+                font-size: 21px;
+                line-height: 25px;
+                color: #818181;
+                padding: 20px 25px 5px 25px;
+                cursor: pointer;
+                &.active{
+                    color: #FF4500;
+                }
+            }
+        }
+    }
+
+    hr {
+        margin: 0 auto;
+        width: 60%;
+        height: 1.21px;
+        background: rgba(0, 0, 0, 0.12);
+        border-radius: 2px;
+        border-top: 0px !important;
+    }
+
+    .login-form {
+        display: none;
+        form {
+            padding: 30px 0px 120px 0px;
+            input {
+                width: 65%;
+                margin: 0 auto;
+                border: none;
+                border-bottom: 2px solid rgba(0, 0, 0, 0.25); 
+                border-radius: 0px;
+                margin-top: 25px;
+                font-size: 18px;
+                line-height: 24px;
+                color: rgba(45, 45, 45, 0.75);
+                &:focus{
+                  outline: none;
+                  box-shadow: none;
+                  border: none;  
+                  border-bottom: 2px solid rgba(0, 0, 0, 0.25); 
+                }
+                &::placeholder {
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: rgba(45, 45, 45, 0.75);
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        &.active {
+            display: block;
+        }
+
+        .submit-btn{
+            display: flex;
+            justify-content: center;
+            margin-top: 55px;
+            button {
+                background: #F24823;
+                box-shadow: 0px -4px 15px rgba(255, 58, 39, 0.45);
+                border-radius: 2px;
+                font-weight: 800;
+                font-size: 21px;
+                line-height: 25px;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                border: none;
+                padding: 15px 60px;
+                &:focus{
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .sign-up-footer {
+        border: none;
+    }
+}
+
+
+
+
 .iti__flag {background-image: url("/images/vendor/intl-tel-input/build/flags.png");}
 
 .iti {

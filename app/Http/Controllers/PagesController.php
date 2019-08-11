@@ -31,4 +31,9 @@ class PagesController extends Controller
         $user = auth()->guard('admin')->user();
         return view('layout.single', compact('single_page','user'));
     }
+
+    public function user_dash()
+    {
+        return view('user.layout.index');
+    }
 }

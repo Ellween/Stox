@@ -105,7 +105,7 @@
     }
     .navbar .nav-item .nav-link
     {
-        font-size: 23px !important;
+        font-size: 18px !important;
     }
 
     .index-benefits .container {
@@ -142,7 +142,7 @@
     }
     .navbar .nav-item .nav-link
     {
-        font-size: 23px !important;
+        font-size: 18px !important;
     }
 
     .index-benefits .container {
@@ -155,6 +155,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    
+
 
     .main-content-head .header-form .form-details
 
@@ -284,6 +287,15 @@ padding-left: 70px !important;
 }
 
 @media only screen and (max-width: 767px) {
+
+    .sign-up-form input {
+        width: 100% !important;
+    }
+
+    .login-in-form input {
+        width: 100% !important;
+    }
+
 
     #phone::placeholder {
         padding-right: 45px !important;

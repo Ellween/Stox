@@ -19876,6 +19876,201 @@ body {
   border-top: 0px !important;
 }
 
+#Login-Signup .modal-dialog {
+  margin: 6rem auto;
+}
+
+#Login-Signup .modal-dialog .modal-content {
+  border-radius: 3px;
+}
+
+.sign-up-form label {
+  position: absolute;
+  left: 50%;
+  color: red;
+}
+
+.modal-content .sing-up-block {
+  display: none;
+}
+
+.modal-content .sing-up-block.active {
+  display: block;
+}
+
+.modal-content .sign-up-header {
+  border: none;
+}
+
+.modal-content .sign-up-header button:focus {
+  outline: none;
+}
+
+.modal-content .sign-up-header .sing-up-login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content .sign-up-header .sing-up-login p {
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  color: #818181;
+  padding: 20px 25px 5px 25px;
+  cursor: pointer;
+}
+
+.modal-content .sign-up-header .sing-up-login p.active {
+  color: #FF4500;
+}
+
+.modal-content hr {
+  margin: 0 auto;
+  width: 60%;
+  height: 1.21px;
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  border-top: 0px !important;
+}
+
+.modal-content .login-form,
+.modal-content .sing-up-block {
+  display: none;
+}
+
+.modal-content .login-form form,
+.modal-content .sing-up-block form {
+  padding: 30px 0px 120px 0px;
+}
+
+.modal-content .login-form form input,
+.modal-content .sing-up-block form input,
+.modal-content .login-form .main-footer .footer-details .footer-form form textarea,
+.main-footer .footer-details .footer-form .modal-content .login-form form textarea,
+.modal-content .sing-up-block .main-footer .footer-details .footer-form form textarea,
+.main-footer .footer-details .footer-form .modal-content .sing-up-block form textarea {
+  width: 65%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+  margin-top: 25px;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(45, 45, 45, 0.75);
+}
+
+.modal-content .login-form form input:focus,
+.modal-content .sing-up-block form input:focus,
+.modal-content .login-form .main-footer .footer-details .footer-form form textarea:focus,
+.main-footer .footer-details .footer-form .modal-content .login-form form textarea:focus,
+.modal-content .sing-up-block .main-footer .footer-details .footer-form form textarea:focus,
+.main-footer .footer-details .footer-form .modal-content .sing-up-block form textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+.modal-content .login-form form input::-webkit-input-placeholder,
+.modal-content .sing-up-block form input::-webkit-input-placeholder,
+.modal-content .login-form .main-footer .footer-details .footer-form form textarea::-webkit-input-placeholder,
+.main-footer .footer-details .footer-form .modal-content .login-form form textarea::-webkit-input-placeholder,
+.modal-content .sing-up-block .main-footer .footer-details .footer-form form textarea::-webkit-input-placeholder,
+.main-footer .footer-details .footer-form .modal-content .sing-up-block form textarea::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(45, 45, 45, 0.75);
+  padding-left: 15px;
+}
+
+.modal-content .login-form form input::-moz-placeholder,
+.modal-content .sing-up-block form input::-moz-placeholder,
+.modal-content .login-form .main-footer .footer-details .footer-form form textarea::-moz-placeholder,
+.main-footer .footer-details .footer-form .modal-content .login-form form textarea::-moz-placeholder,
+.modal-content .sing-up-block .main-footer .footer-details .footer-form form textarea::-moz-placeholder,
+.main-footer .footer-details .footer-form .modal-content .sing-up-block form textarea::-moz-placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(45, 45, 45, 0.75);
+  padding-left: 15px;
+}
+
+.modal-content .login-form form input:-ms-input-placeholder,
+.modal-content .sing-up-block form input:-ms-input-placeholder,
+.modal-content .login-form .main-footer .footer-details .footer-form form textarea:-ms-input-placeholder,
+.main-footer .footer-details .footer-form .modal-content .login-form form textarea:-ms-input-placeholder,
+.modal-content .sing-up-block .main-footer .footer-details .footer-form form textarea:-ms-input-placeholder,
+.main-footer .footer-details .footer-form .modal-content .sing-up-block form textarea:-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(45, 45, 45, 0.75);
+  padding-left: 15px;
+}
+
+.modal-content .login-form form input::-ms-input-placeholder,
+.modal-content .sing-up-block form input::-ms-input-placeholder,
+.modal-content .login-form .main-footer .footer-details .footer-form form textarea::-ms-input-placeholder,
+.main-footer .footer-details .footer-form .modal-content .login-form form textarea::-ms-input-placeholder,
+.modal-content .sing-up-block .main-footer .footer-details .footer-form form textarea::-ms-input-placeholder,
+.main-footer .footer-details .footer-form .modal-content .sing-up-block form textarea::-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(45, 45, 45, 0.75);
+  padding-left: 15px;
+}
+
+.modal-content .login-form form input::placeholder,
+.modal-content .sing-up-block form input::placeholder,
+.modal-content .login-form .main-footer .footer-details .footer-form form textarea::placeholder,
+.main-footer .footer-details .footer-form .modal-content .login-form form textarea::placeholder,
+.modal-content .sing-up-block .main-footer .footer-details .footer-form form textarea::placeholder,
+.main-footer .footer-details .footer-form .modal-content .sing-up-block form textarea::placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(45, 45, 45, 0.75);
+  padding-left: 15px;
+}
+
+.modal-content .login-form.active,
+.modal-content .active.sing-up-block {
+  display: block;
+}
+
+.modal-content .login-form .submit-btn,
+.modal-content .sing-up-block .submit-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+.modal-content .login-form .submit-btn button,
+.modal-content .sing-up-block .submit-btn button {
+  background: #F24823;
+  box-shadow: 0px -4px 15px rgba(255, 58, 39, 0.45);
+  border-radius: 2px;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px 60px;
+}
+
+.modal-content .login-form .submit-btn button:focus,
+.modal-content .sing-up-block .submit-btn button:focus {
+  border: none;
+  outline: none;
+}
+
+.modal-content .sign-up-footer {
+  border: none;
+}
+
 .iti__flag {
   background-image: url("/images/vendor/intl-tel-input/build/flags.png");
 }
@@ -20021,7 +20216,7 @@ body {
   }
 
   .navbar .nav-item .nav-link {
-    font-size: 23px !important;
+    font-size: 18px !important;
   }
 
   .index-benefits .container {
@@ -20056,7 +20251,7 @@ body {
   }
 
   .navbar .nav-item .nav-link {
-    font-size: 23px !important;
+    font-size: 18px !important;
   }
 
   .index-benefits .container {
@@ -20189,18 +20384,34 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  .sign-up-form input,
+  .sign-up-form .main-footer .footer-details .footer-form form textarea,
+  .main-footer .footer-details .footer-form form .sign-up-form textarea {
+    width: 100% !important;
+  }
+
+  .login-in-form input,
+  .login-in-form .main-footer .footer-details .footer-form form textarea,
+  .main-footer .footer-details .footer-form form .login-in-form textarea {
+    width: 100% !important;
+  }
+
   #phone::-webkit-input-placeholder {
     padding-right: 45px !important;
   }
+
   #phone::-moz-placeholder {
     padding-right: 45px !important;
   }
+
   #phone:-ms-input-placeholder {
     padding-right: 45px !important;
   }
+
   #phone::-ms-input-placeholder {
     padding-right: 45px !important;
   }
+
   #phone::placeholder {
     padding-right: 45px !important;
   }

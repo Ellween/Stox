@@ -115,6 +115,69 @@ $(document).ready(function () {
       });
 
     });
+
+    $('.sign-up-p').click(function(){
+      $('.log-in-p').removeClass('active');
+      $('.login-form').removeClass('active');
+      $(this).addClass('active');
+      $('.sing-up-block').addClass('active');
+    });
+
+    $('.log-in-p').click(function(){
+      $('.sing-up-block').removeClass('active');
+      $('.sign-up-p').removeClass('active');
+      $(this).addClass('active');
+      $('.login-form').addClass('active');
+    });
+
+
+    $("#myform").validate({
+      rules: {
+        // no quoting necessary
+        name: "required",
+        // quoting necessary!
+        last_name: "required",
+        email: "required",
+        phone: "required",
+        country: "required",
+        password: "required",
+        password_confirm :{
+          equalTo: "#password"
+        }
+      }
+    });
+
+
+
+    $('.login-in-form').on('submit',function(e){
+      e.preventDefault();
+      var email = $('#email').val();
+      var pass = $('#password').val(); 
+
+      $.ajax ({
+        headers: {
+          'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+        },
+  
+        url: $(this).attr('action'),
+        type : 'POST',
+        data: {email:email, password:pass },
+  
+        success: function(data)
+        {
+          top.location.href = '/dashboard';
+
+         console.log(data.message);
+        },
+  
+        error: function()
+        {
+          $('.invalid').text("Email or Password is incorrect");
+          $('.invalid-text').css('display','flex');
+          console.log('Data was invalid');
+        }
+      });
+    });
       
   });
 

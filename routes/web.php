@@ -65,6 +65,10 @@ Route::prefix('admin')->group(function(){
         });
 });
 
+// User Page
+
+Route::get('/dashboard','PagesController@user_dash')->name('user_dashboard');
+
 
 
 // Send Mail 
