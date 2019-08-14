@@ -26,16 +26,16 @@
                             <div class="form-details">
                                 <div class="row">
                                     <div class="col-lg-3 col-md-3 col-sm-12">
-                                        <input type="text" class='form-control' placeholder="Enter Your Name">
+                                        <input type="text" class='form-control' name ='get_started_name'  placeholder="Enter Your Name">
                                     </div>
                                     <div class="col-lg-3 col-md-3 col-sm-12">
-                                        <input type="email" class='form-control' placeholder="Your E-mail">
+                                        <input type="email" class='form-control' name ='get_started_email'  placeholder="Your E-mail">
                                     </div>
                                     <div class="col-lg-3 col-md-3 col-sm-12">
-                                        <input type="tel" name='phone' id="phone" class='form-control' placeholder="Enter Your Phone">
+                                        <input type="tel" name='phone' id="phone" name ='get_started_phone' class='form-control' placeholder="Enter Your Phone">
                                     </div>
                                     <div class="col-lg-3 col-md-3 col-sm-12">
-                                        <button type="submit" value="" class='form-control btn-submit'>Submit</button>
+                                        <button type="submit" value="" class='form-control btn-submit btn-get-started'>Submit</button>
                                     </div>
                                 </div>
                             </div>

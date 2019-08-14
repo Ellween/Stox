@@ -25,7 +25,7 @@
                  <li class="nav-item">
                     <div class="login d-flex align-items-center" data-toggle="modal" data-target="#Login-Signup">
                         <i class="fas fa-sign-out-alt"></i>
-                        @if(Auth::check())
+                        @if(Session::has('user_register') === true)
                         <a class="nav-link" href="/logout">SIGN OUT</a>
                         @else
                         <a class="nav-link" href="#">LOGIN / REGISTER</a>

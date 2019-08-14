@@ -15,8 +15,8 @@
                             <ul>
                                 <li><img src="/images/broker-img.svg" alt=""></li>
                                 <li><p>Aetos Capital</p></li>
-                                <li><button>Register Now</button></li>
-                                <li><button>Home Page</button></li>
+                                <a href ='https://www.aetoscg.com/12030578-E00'><li><button>Register Now</button></li></a>
+                                <a href='https://www.aetoscg.com/en'><li><button>Home Page</button></li></a>
                             </ul>
                         </div>
                     </div>

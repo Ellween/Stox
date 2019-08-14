@@ -10,7 +10,7 @@
                                 </div>
                                 <div class="personal_support">
                                     <p>support@stoxtrades.com</p>
-                                    <p>+44 20 39 66 5785</p>
+                                    <p>+61272020629</p>
                                 </div>
                             </div>
                         </div>     

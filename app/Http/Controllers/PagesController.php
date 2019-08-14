@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Glossary;
 use App\Page;
+use Auth;
 
 class PagesController extends Controller
 {
@@ -34,11 +35,22 @@ class PagesController extends Controller
 
     public function user_dash()
     {
-        return view('user.layout.index');
+        $user = Auth::user();
+        return view('user.layout.index',compact('user'));
     }
 
     public function my_broker()
     {
         return view('user.layout.my-broker');
+    }
+
+    public function real_time_chart()
+    {
+        return view('user.layout.realtime-chart');
+    }
+
+    public function economic_calendar()
+    {
+        return view('user.layout.economic-calendar');
     }
 }

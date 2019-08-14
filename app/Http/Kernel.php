@@ -41,6 +41,10 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\CheckUserIfAdmin::class,
         ],
 
+        'login' => [
+            \App\Http\Middleware\login::class,
+        ],
+
         'api' => [
             'throttle:60,1',
             'bindings',

@@ -113,8 +113,8 @@ $(document).ready(function () {
           console.log('nope');
         }
       });
-
     });
+
 
     $('.sign-up-p').click(function(){
       $('.log-in-p').removeClass('active');
@@ -131,6 +131,7 @@ $(document).ready(function () {
     });
 
 
+
     $("#myform").validate({
       rules: {
         // no quoting necessary
@@ -140,45 +141,152 @@ $(document).ready(function () {
         email: "required",
         phone: "required",
         country: "required",
-        password: "required",
+        sign_password: {
+          required: true,
+          minlength: 6
+        },
         password_confirm :{
-          equalTo: "#password"
+          equalTo: "#pass"
         }
       }
     });
 
-
-
-    $('.login-in-form').on('submit',function(e){
+    $('.btn-get-started').on('click',function(e){
       e.preventDefault();
-      var email = $('#email').val();
-      var pass = $('#password').val(); 
+
+      var name = $("input[name*='get_started_name']" ).val();
+     
+      var email = $("input[name*='get_started_email']" ).val();
+      var phone =  $("input[name*='get_started_phone']" ).val();
+      
+
+      
+      let data = {
+        "params": {
+          "name":name,
+          
+          "phone":phone,
+          "email":email,
+          
+        }
+      };
+
+      $.ajax({
+        url: 'https://crm.stoxtrades.com/your/callback',
+        type: 'post',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify(data),
+        success: function (res) {
+          Swal.fire({
+            position: 'center',
+            type: 'success',
+            title: 'Lead Sent Successfully',
+            showConfirmButton: false,
+            timer: 2000
+          });
+          console.log("Lead send to CRM", res);
+          $("input[name*='get_started_name']" ).val("");
+          $("input[name*='get_started_email']" ).val("");
+          $("input[name*='get_started_phone']" ).val("");
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+        
+        }
+      });
+
+
+
+    });
+
+   
+    $("#mail_send_form").validate({
+      rules: {
+        // no quoting necessary
+        name: "required",
+        // quoting necessary!
+       
+        email: "required",
+      }
+    });
+
+
+    // $('.btn-get-started').on('submit',function(e){
+    //   e.preventDefault();
+    //   var email = $('#email').val();
+    //   var pass = $('#password').val(); 
+
+    //   $.ajax ({
+    //     headers: {
+    //       'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+    //     },
+  
+    //     url: $(this).attr('action'),
+    //     type : 'POST',
+    //     data: {email:email, password:pass },
+  
+    //     success: function(data)
+    //     {
+    //       top.location.href = '/dashboard';
+
+    //      console.log(data.message);
+    //     },
+  
+    //     error: function()
+    //     {
+    //       $('.invalid').text("Email or Password is incorrect");
+    //       $('.invalid-text').css('display','flex');
+    //       console.log('Data was invalid');
+    //     }
+    //   });
+    // });
+
+
+    $('.send_email').click(function(e){
+      e.preventDefault();
+
+      var name = $('#mail_name').val();
+      var email = $('#mail_email').val();
+      var text = $('#mail_text').val();
 
       $.ajax ({
         headers: {
           'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
         },
   
-        url: $(this).attr('action'),
+        url: '/send_mail',
         type : 'POST',
-        data: {email:email, password:pass },
+        data: { name : name, email: email , text: text },
   
         success: function(data)
         {
-          top.location.href = '/dashboard';
+          Swal.fire({
+            position: 'center',
+            type: 'success',
+            title: 'Message was sent successfully',
+            showConfirmButton: false,
+            timer: 2000
+          });
+
+          $('#mail_name').val("");
+          $('#mail_email').val("");
+          $('#mail_text').val("");
 
          console.log(data.message);
         },
   
         error: function()
         {
-          $('.invalid').text("Email or Password is incorrect");
-          $('.invalid-text').css('display','flex');
-          console.log('Data was invalid');
+          
         }
       });
+
     });
       
+    $('.close').click(function(){
+      $('.modal').removeClass('d-block');
+    });
+
   });
 
 

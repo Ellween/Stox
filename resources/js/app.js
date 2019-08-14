@@ -10,6 +10,8 @@ require('./bootstrap');
 import intlTelInput from 'intl-tel-input';
 window.intlTelInput = intlTelInput; 
 import 'jquery-validation';
+import Swal from 'sweetalert2'
+window.Swal = Swal;
 
 
 require('./script');

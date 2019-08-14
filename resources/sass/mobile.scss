@@ -172,6 +172,10 @@
 
 @media only screen and (max-width: 768px) {
 
+    .realtime_chart {
+        margin-left: 0px !important;
+    }
+
     .my_broker h1 {
         margin-left: 0px !important;
     }
@@ -329,6 +333,12 @@ padding-left: 70px !important;
 }
 
 @media only screen and (max-width: 767px) {
+
+    .modal-content .sing-up-block select
+
+    {
+        width: 100%;
+    }
 
     .brokers {
         width: 100%;

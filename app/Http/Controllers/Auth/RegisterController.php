@@ -37,7 +37,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        // $this->middleware('guest');
     }
 
     /**
@@ -49,16 +49,17 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
 
-     
-
+       
         return Validator::make($data, [
             'name' => 'required|string|max:255',
             'last_name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'phone' => 'required|string|max:255',
             'country' => 'required|string|max:255',
-            'password' => 'required|string|min:6',
+            'sign_password' => 'required|string|min:6',
         ]);
+
+       
        
     }
 
@@ -70,13 +71,29 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'last_name' => $data['last_name'],
-            'email' => $data['email'],
-            'phone' => $data['phone'],
-            'country' => $data['country'],
-            'password' => Hash::make($data['password']),
-        ]);
+       
+        
+        
+        // $apiRequest = $client->request('POST', 'https://crm.stoxtrades.com/your/callback', $g);
+
+
+
+
+       
+        // $res = $client->request('POST', 'https://crm.stoxtrades.com/your/callback', [
+        //     'headers' => ['Content-Type' => 'application/json'],
+        //     'query' => [
+        //         'key' => $g
+        //     ]
+        // ]);
+
+        // // url will be: http://my.domain.com/test.php?key1=5&key2=ABC;
+
+        // dd($res);
+
+        // $statusCode = $response->getStatusCode();
+        // $content = $response->getBody();
+
+        
     }
 }

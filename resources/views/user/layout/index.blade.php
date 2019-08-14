@@ -15,10 +15,10 @@
                             </div>
                             <div class="personal_info_form">
                                 <div class="personal_inputs">
-                                    <input type="text" value = "First Name" class='form-control'>
-                                    <input type="text" value = "Last Name" class='form-control'>
-                                    <input type="text" value = "Country" class='form-control'>
-                                    <input type="text" value = "Contact Number" class='form-control'>
+                                    <input disabled='true' type="text" value = {{ Session::get('data')['name'] }} class='form-control'>
+                                    <input disabled='true' type="text" value = {{ Session::get('data')['last_name'] }} class='form-control'>
+                                    <input disabled='true' type="text" value = "{{ Session::get('data')['country'] }}" class='form-control'>
+                                    <input disabled='true' type="text" value = {{ Session::get('data')['phone'] }} class='form-control'>
                                 </div>
                                 <div class="man_img">
                                     <img src="/images/Frame.svg" alt="">

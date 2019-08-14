@@ -19111,6 +19111,10 @@ body {
   max-width: 1262px;
 }
 
+.opacity {
+  opacity: 1 !important;
+}
+
 .navbar {
   background: linear-gradient(174.21deg, #010289 1.36%, #1D30D5 88.7%);
 }
@@ -19512,6 +19516,11 @@ body {
   padding-left: 15px;
 }
 
+.main-footer .footer-details .footer-form .form-header img {
+  width: 24px;
+  height: 24px;
+}
+
 .main-footer .footer-details .footer-form form {
   padding: 30px 60px;
 }
@@ -19898,6 +19907,60 @@ body {
   display: block;
 }
 
+.modal-content .sing-up-block select {
+  width: 65%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+  margin-top: 25px;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(45, 45, 45, 0.75);
+}
+
+.modal-content .sing-up-block select:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+.modal-content .sing-up-block select::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(45, 45, 45, 0.75);
+  padding-left: 15px;
+}
+
+.modal-content .sing-up-block select::-moz-placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(45, 45, 45, 0.75);
+  padding-left: 15px;
+}
+
+.modal-content .sing-up-block select:-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(45, 45, 45, 0.75);
+  padding-left: 15px;
+}
+
+.modal-content .sing-up-block select::-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(45, 45, 45, 0.75);
+  padding-left: 15px;
+}
+
+.modal-content .sing-up-block select::placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(45, 45, 45, 0.75);
+  padding-left: 15px;
+}
+
 .modal-content .sign-up-header {
   border: none;
 }
@@ -20075,6 +20138,10 @@ body {
   width: 100%;
 }
 
+.header_nav a {
+  text-decoration: none;
+}
+
 .header_nav ul {
   list-style-type: none;
   display: flex;
@@ -20163,7 +20230,7 @@ body {
 }
 
 .brokers ul li {
-  margin: 0 75px;
+  margin: 0 70px;
 }
 
 .brokers ul li:first-child {
@@ -20413,6 +20480,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .realtime_chart {
+    margin-left: 0px !important;
+  }
+
   .my_broker h1 {
     margin-left: 0px !important;
   }
@@ -20561,6 +20632,10 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  .modal-content .sing-up-block select {
+    width: 100%;
+  }
+
   .brokers {
     width: 100%;
   }

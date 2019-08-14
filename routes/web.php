@@ -37,6 +37,11 @@ Route::post('/add_page','PageController@store');
 Auth::routes();
 Route::get('/logout','Auth\LoginController@logout');
 
+// Login
+
+Route::post('/user_register','Login_RegisterController@login_user')->name('login_user');
+Route::post('/user_login','Login_RegisterController@login_dashboard_user')->name('login_dashboard_user');
+
 
 // Admin
 Route::prefix('admin')->group(function(){
@@ -67,10 +72,12 @@ Route::prefix('admin')->group(function(){
 
 // User Page
 
-Route::get('/dashboard','PagesController@user_dash')->name('user_dashboard')->middleware('auth');;
-Route::get('/my-broker','PagesController@my_broker')->name('my-broker')->middleware('auth');;
-
-
+Route::group(['middleware' => 'login'], function () {
+    Route::get('/dashboard','PagesController@user_dash')->name('user_dashboard');
+    Route::get('/my-broker','PagesController@my_broker')->name('my-broker');
+    Route::get('/realtime-chart','PagesController@real_time_chart')->name('real_time_chart');
+    Route::get('/economic-calendar','PagesController@economic_calendar')->name('economic_calendar');
+});
 
 // Send Mail 
 
